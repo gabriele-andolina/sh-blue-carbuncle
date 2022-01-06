@@ -106,3 +106,13 @@ h2 {
     bottom: 90%;
     right: 100%;
 }
+
+#sherlock-sitting {
+    position: relative;
+    bottom: 50%;
+}
+
+#part-one-par {
+    position: relative;
+    top: 50%;
+}
