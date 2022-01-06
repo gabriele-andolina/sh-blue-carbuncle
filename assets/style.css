@@ -113,7 +113,9 @@ h2 {
     right: 100%;
 }
 
-
+#hat {
+    bottom: 110%;
+}
 
 #sherlock-sitting {
     position: relative;
