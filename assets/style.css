@@ -126,3 +126,43 @@ h2 {
     position: relative;
     top: 50%;
 }
+
+#observation-deduction-game {
+    height: 100%;
+    position: relative;
+    top: 15%;
+}
+
+#observations {
+    width: 50%;
+    position: relative;
+    top: 5vh;
+    left: 25%;
+}
+
+.observation {
+    width: 50vw;
+    height: 20vh;
+    border: black 1px solid;
+    position: relative;
+    margin-top: 5%;
+    border-radius: 8px;
+    background-color: #FFC900;
+}
+
+.observation p {
+    text-align: center;
+    vertical-align: middle;
+    margin: 2% auto;
+}
+
+select {
+    width: 40vw;
+    position: relative;
+    top: 2vh;
+    left: 5vw;
+    font-family: Raleway;
+    font-size: 15px;
+    border: black 1px solid;
+    cursor: pointer;
+}
