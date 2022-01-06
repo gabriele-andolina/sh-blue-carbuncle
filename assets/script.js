@@ -1,6 +1,7 @@
 /* Button variables*/
 let mainButton = document.getElementById("main-button");
 let gameAfootButton = document.getElementById("game-afoot-button");
+let nextButtonOne = document.getElementById("next-button-one");
 
 /* Story parts' variables with their initial hidden status*/
 let instructions = document.getElementById("instructions");
@@ -8,6 +9,9 @@ instructions.hidden = true;
 
 let partOne = document.getElementById("part-one");
 partOne.hidden = true;
+
+let partTwo = document.getElementById("part-two");
+partTwo.hidden = true;
 
 /* Button functions, show the next portion of the story*/
 mainButton.onclick = function() {
@@ -20,4 +24,10 @@ gameAfootButton.onclick = function() {
     partOne.hidden = false;
     gameAfootButton.hidden = true;
     partOne.scrollIntoView({behavior: "smooth"});
+};
+
+nextButtonOne.onclick = function() {
+    partTwo.hidden = false;
+    nextButtonOne.hidden = true;
+    partTwo.scrollIntoView({behavior: "smooth"});
 };
