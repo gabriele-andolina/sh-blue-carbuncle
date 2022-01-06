@@ -84,3 +84,10 @@ h2 {
 #instruction-paragraph {
     font-style: normal;
 }
+
+.image-one {
+    height: 200px;
+    position: relative;
+    bottom: 70%;
+    left: 125%;
+}
