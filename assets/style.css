@@ -99,3 +99,10 @@ h2 {
     bottom: 70%;
     left: 125%;
 }
+
+.image-two {
+    height: 450px;
+    position: relative;
+    bottom: 90%;
+    right: 100%;
+}
