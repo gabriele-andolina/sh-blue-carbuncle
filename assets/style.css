@@ -30,7 +30,7 @@ h1 {
     left: 28vw;
 }
 
-#main-button, #game-afoot-button, #next-button-one, #next-button-two {
+#main-button, #game-afoot-button, #next-button-one, #next-button-two, #submit {
     width: 20%;
     position: relative;
     top: 21%;
@@ -56,7 +56,16 @@ h1 {
     left: 40%;
 }
 
-#main-button:hover, #game-afoot-button:hover, #next-button-one:hover, #next-button-two:hover {
+#submit {
+    width: 20vw;
+    margin-top: 10%;
+    position: relative;
+    top: 100%;
+    left: 75%;
+}
+
+#main-button:hover, #game-afoot-button:hover, #next-button-one:hover, #next-button-two:hover
+#submit:hover {
     color: #1C6DD0;
     background-color: white;
     border: #1C6DD0 2px solid;

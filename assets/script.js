@@ -2,6 +2,7 @@
 let mainButton = document.getElementById("main-button");
 let gameAfootButton = document.getElementById("game-afoot-button");
 let nextButtonOne = document.getElementById("next-button-one");
+let nextButtonTwo = document.getElementById("next-button-two");
 
 /* Story parts' variables with their initial hidden status*/
 let instructions = document.getElementById("instructions");
@@ -13,7 +14,12 @@ partOne.hidden = true;
 let partTwo = document.getElementById("part-two");
 partTwo.hidden = true;
 
-/* Button functions, show the next portion of the story*/
+let observationDeductionGame = document.getElementById("observation-deduction-game");
+observationDeductionGame.hidden = true;
+
+/* Button functions, show the next portion of the story
+Inspired from Codecademy's "Piano Keys" project
+*/
 mainButton.onclick = function() {
     instructions.hidden = false;
     mainButton.hidden = true;
@@ -30,4 +36,10 @@ nextButtonOne.onclick = function() {
     partTwo.hidden = false;
     nextButtonOne.hidden = true;
     partTwo.scrollIntoView({behavior: "smooth"});
+};
+
+nextButtonTwo.onclick = function() {
+    observationDeductionGame.hidden = false;
+    nextButtonTwo.hidden = true;
+    observationDeductionGame.scrollIntoView({behavior: "smooth"});
 };
