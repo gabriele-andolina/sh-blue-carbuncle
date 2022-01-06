@@ -11,3 +11,10 @@
     height: 400px;
     margin: 5vh 15%;
 }
+
+h1 {
+    position: relative;
+    text-align: center;
+    font-family: Tangerine;
+    font-size: 50px;
+}
