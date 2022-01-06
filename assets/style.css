@@ -5,3 +5,9 @@
     padding: 0;
     border: none;
 }
+
+#main {
+    width: 70%;
+    height: 400px;
+    margin: 5vh 15%;
+}
