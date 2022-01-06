@@ -46,8 +46,8 @@ h1 {
 
 #game-afoot-button {
     width: 20vw;
-    top: 110%;
-    left: 5vw;
+    top: 130%;
+    left: 10vw;
 }
 
 #main-button:hover, #game-afoot-button:hover {
