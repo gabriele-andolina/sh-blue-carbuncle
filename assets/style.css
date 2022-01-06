@@ -30,7 +30,7 @@ h1 {
     left: 28vw;
 }
 
-#main-button, #game-afoot-button, #next-button-one {
+#main-button, #game-afoot-button, #next-button-one, #next-button-two {
     width: 20%;
     position: relative;
     top: 21%;
@@ -50,13 +50,13 @@ h1 {
     left: 10vw;
 }
 
-#next-button-one {
+#next-button-one, #next-button-two {
     position: absolute;
     top: 110%;
     left: 40%;
 }
 
-#main-button:hover, #game-afoot-button:hover, #next-button-one:hover {
+#main-button:hover, #game-afoot-button:hover, #next-button-one:hover, #next-button-two:hover {
     color: #1C6DD0;
     background-color: white;
     border: #1C6DD0 2px solid;
@@ -112,6 +112,8 @@ h2 {
     bottom: 90%;
     right: 100%;
 }
+
+
 
 #sherlock-sitting {
     position: relative;
