@@ -19,9 +19,35 @@ h1 {
     font-size: 50px;
 }
 
+#blue:hover {
+    color: #1C6DD0;
+}
+
 #intro-image {
     height: 400px;
     position: relative;
-    top: 5vh;
+    top: 3vh;
     left: 28vw;
 }
+
+#main-button {
+    width: 20%;
+    position: relative;
+    top: 21%;
+    left: 20%;
+    text-align: center;
+    font-family: Tangerine;
+    color: white;
+    background-color: #1C6DD0;
+    font-size: 50px;
+    border: #1C6DD0 2px solid;
+    border-radius: 12px;
+}
+
+#main-button:hover {
+    color: #1C6DD0;
+    background-color: white;
+    border: #1C6DD0 2px solid;
+    cursor: pointer;
+}
+
