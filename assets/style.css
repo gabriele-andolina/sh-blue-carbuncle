@@ -65,6 +65,14 @@ h1 {
     top: 10%;
 }
 
+.type-two-div {
+    width: 40%;
+    height: 400px;
+    margin: 20% 15%;
+    position: relative;
+    margin-left: 45%;
+}
+
 h2, p {
     position: relative;
     top: 15%;
