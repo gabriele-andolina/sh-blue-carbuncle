@@ -43,3 +43,24 @@ nextButtonTwo.onclick = function() {
     nextButtonTwo.hidden = true;
     observationDeductionGame.scrollIntoView({behavior: "smooth"});
 };
+
+/* First JavaScript game: observation-deduction pairing game
+Game function: it fires when the user clicks on checkAnswersButton and checks if the user has chosen
+the right deduction for each observation. If so, it changes the innerHTML of the same button to let 
+the user move on with the story, otherwise it tells the user to check their answers again.
+*/
+checkAnswersButton.addEventListener("click", function() {
+    if ((selectedDedOne != "h") || (selectedDedTwo != "f") ||
+    (selectedDedThree != "a") || (selectedDedFour != "b") ||
+    (selectedDedFive != "g") || (selectedDedSix != "j") ||
+    (selectedDedSeven != "e") || (selectedDedEight != "i") ||
+    (selectedDedNine != "d") || (selectedDedTen != "c")) {
+        checkAnswersButton.innerHTML = "Hmm... not quite, Dr Watson. Try again."
+    } else if ((selectedDedOne === "h") && (selectedDedTwo === "f") &&
+    (selectedDedThree === "a") && (selectedDedFour === "b") &&
+    (selectedDedFive === "g") && (selectedDedSix === "j") &&
+    (selectedDedSeven === "e") && (selectedDedEight === "i") &&
+    (selectedDedNine === "d") && (selectedDedTen === "c")) {
+        checkAnswersButton.innerHTML = "Well done, Dr Watson! Let us move on."
+    }
+});
