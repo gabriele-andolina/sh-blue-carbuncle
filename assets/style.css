@@ -64,7 +64,7 @@ h1 {
     left: 75%;
 }
 
-#main-button:hover, #game-afoot-button:hover, #next-button-one:hover, #next-button-two:hover
+#main-button:hover, #game-afoot-button:hover, #next-button-one:hover, #next-button-two:hover,
 #submit:hover {
     color: #1C6DD0;
     background-color: white;
