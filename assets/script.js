@@ -9,6 +9,7 @@ let checkAnswersButton = document.getElementById("submit");
 let answers = document.getElementsByClassName("answers");
 let answerKeys = ["h", "f", "a", "b", "g", "j", "e", "i", "d", "c"];
 let selectedDed = [];
+let nextButtonFour = document.getElementById("next-button-four");
 
 let instructions = document.getElementById("instructions");
 instructions.hidden = true;
@@ -20,6 +21,8 @@ let observationDeductionGame = document.getElementById("observation-deduction-ga
 observationDeductionGame.hidden = true;
 let partFour = document.getElementById("part-four");
 partFour.hidden = true;
+let partFive = document.getElementById("part-five");
+partFive.hidden = true;
 
 /* Button functions, show the next portion of the story
 Inspired from Codecademy's "Piano Keys" project
@@ -47,6 +50,14 @@ nextButtonTwo.onclick = function() {
     nextButtonTwo.hidden = true;
     observationDeductionGame.scrollIntoView({behavior: "smooth"});
 };
+
+nextButtonFour.onclick = function() {
+    partFive.hidden = false;
+    nextButtonFour.hidden = true;
+    partFive.scrollIntoView({behavior: "smooth"});
+}
+
+
 
 /* First JavaScript game functions */
 let moveOn = () => {
