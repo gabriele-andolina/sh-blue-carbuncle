@@ -18,6 +18,8 @@ let partTwo = document.getElementById("part-two");
 partTwo.hidden = true;
 let observationDeductionGame = document.getElementById("observation-deduction-game");
 observationDeductionGame.hidden = true;
+let partFour = document.getElementById("part-four");
+partFour.hidden = true;
 
 /* Button functions, show the next portion of the story
 Inspired from Codecademy's "Piano Keys" project
@@ -47,6 +49,16 @@ nextButtonTwo.onclick = function() {
 };
 
 /* First JavaScript game's functions */
+let moveOn = () => {
+    if (checkAnswersButton.innerHTML === "Well done, Dr Watson! Let us move on.") {
+        checkAnswersButton.addEventListener("click", function() {
+            partFour.hidden = false;
+            checkAnswersButton.hidden = true;
+            partFour.scrollIntoView({behavior: "smooth"});
+            })
+    }
+};
+
 let checkAnswers = () => {
     for (let i = 0; i < answers.length; i++) {
         selectedDed.push(answers[i].options[answers[i].selectedIndex].value);
@@ -56,6 +68,7 @@ let checkAnswers = () => {
         for (let j = 0; j < answerKeys.length; j++) {
             if (selectedDed[i] === answerKeys[i]) {
                 checkAnswersButton.innerHTML = "Well done, Dr Watson! Let us move on.";
+                moveOn();
             } else {
                 checkAnswersButton.innerHTML = "Hmm... not quite Dr Watson. Check your answers and try again.";
             }
