@@ -30,11 +30,11 @@ h1 {
     left: 28vw;
 }
 
-#main-button, #game-afoot-button, #next-button-one, #next-button-two, #submit {
+#main-button, #game-afoot-button, #next-button-one, #next-button-two, #submit, #next-button-four {
     width: 20%;
-    position: relative;
-    top: 21%;
-    left: 20%;
+    position: absolute;
+    top: 90%;
+    left: 40%;
     text-align: center;
     font-family: Tangerine;
     color: white;
@@ -46,14 +46,17 @@ h1 {
 
 #game-afoot-button {
     width: 20vw;
-    top: 130%;
+    top: 170%;
     left: 10vw;
 }
 
-#next-button-one, #next-button-two {
-    position: absolute;
-    top: 110%;
+#next-button-one, #next-button-four {
+    top: 175%;
     left: 40%;
+}
+
+#next-button-two {
+    top: 195%;
 }
 
 #submit {
@@ -65,7 +68,7 @@ h1 {
 }
 
 #main-button:hover, #game-afoot-button:hover, #next-button-one:hover, #next-button-two:hover,
-#submit:hover {
+#submit:hover, #next-button-four:hover {
     color: #1C6DD0;
     background-color: white;
     border: #1C6DD0 2px solid;
@@ -129,6 +132,13 @@ h2 {
 #sherlock-sitting {
     position: relative;
     bottom: 60%;
+}
+
+#goose {
+    height: 80%;
+    position: relative;
+    bottom: 90%;
+    right: 70%;
 }
 
 #part-one-par {

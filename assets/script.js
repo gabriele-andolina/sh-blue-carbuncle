@@ -48,7 +48,7 @@ nextButtonTwo.onclick = function() {
     observationDeductionGame.scrollIntoView({behavior: "smooth"});
 };
 
-/* First JavaScript game's functions */
+/* First JavaScript game functions */
 let moveOn = () => {
     if (checkAnswersButton.innerHTML === "Well done, Dr Watson! Let us move on.") {
         checkAnswersButton.addEventListener("click", function() {
@@ -63,15 +63,16 @@ let checkAnswers = () => {
     for (let i = 0; i < answers.length; i++) {
         selectedDed.push(answers[i].options[answers[i].selectedIndex].value);
     }
-
+//remove != and restore === + else statement
     for (let i = 0; i < selectedDed.length; i++) {
         for (let j = 0; j < answerKeys.length; j++) {
-            if (selectedDed[i] === answerKeys[i]) {
+            if (selectedDed[i] != answerKeys[i]) {
                 checkAnswersButton.innerHTML = "Well done, Dr Watson! Let us move on.";
                 moveOn();
-            } else {
-                checkAnswersButton.innerHTML = "Hmm... not quite Dr Watson. Check your answers and try again.";
-            }
+            } 
+            // else {
+            //     checkAnswersButton.innerHTML = "Hmm... not quite Dr Watson. Check your answers and try again.";
+            // }
         }
     }
 };
