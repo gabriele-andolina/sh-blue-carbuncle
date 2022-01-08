@@ -47,3 +47,19 @@ nextButtonTwo.onclick = function() {
 };
 
 /* First JavaScript game's functions */
+let checkAnswers = () => {
+    for (let i = 0; i < answers.length; i++) {
+        selectedDed.push(answers[i].options[answers[i].selectedIndex].value);
+    }
+
+    for (let i = 0; i < selectedDed.length; i++) {
+        for (let j = 0; j < answerKeys.length; j++) {
+            if (selectedDed[i] === answerKeys[i]) {
+                checkAnswersButton.innerHTML = "Well done, Dr Watson! Let us move on.";
+            } else {
+                checkAnswersButton.innerHTML = "Hmm... not quite Dr Watson. Check your answers and try again.";
+            }
+        }
+    }
+};
+checkAnswersButton.addEventListener("click", checkAnswers);
