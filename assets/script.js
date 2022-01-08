@@ -6,6 +6,7 @@ let gameAfootButton = document.getElementById("game-afoot-button");
 let nextButtonOne = document.getElementById("next-button-one");
 let nextButtonTwo = document.getElementById("next-button-two");
 let checkAnswersButton = document.getElementById("submit");
+let answers = document.getElementsByClassName("answers");
 
 let instructions = document.getElementById("instructions");
 instructions.hidden = true;
