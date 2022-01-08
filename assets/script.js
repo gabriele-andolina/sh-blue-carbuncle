@@ -7,6 +7,7 @@ let nextButtonOne = document.getElementById("next-button-one");
 let nextButtonTwo = document.getElementById("next-button-two");
 let checkAnswersButton = document.getElementById("submit");
 let answers = document.getElementsByClassName("answers");
+let answerKeys = ["h", "f", "a", "b", "g", "j", "e", "i", "d", "c"];
 
 let instructions = document.getElementById("instructions");
 instructions.hidden = true;
