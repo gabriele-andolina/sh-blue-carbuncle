@@ -72,6 +72,10 @@ h1 {
     top: 250%;
 }
 
+#next-button-nine {
+    top: 120%;
+}
+
 #submit {
     width: 20vw;
     margin-top: 10%;
@@ -191,6 +195,12 @@ h2 {
     position: relative;
     right: 80%;
     bottom: 140%;
+}
+
+#door {
+    position: relative;
+    height: 90%;
+    bottom: 75%;
 }
 
 #part-one-par {
