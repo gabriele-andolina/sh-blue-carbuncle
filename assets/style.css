@@ -60,12 +60,16 @@ h1 {
     top: 195%;
 }
 
-#next-button-five, #next-button-eight {
+#next-button-five {
     top: 240%;
 }
 
 #next-button-six {
     top: 140%;
+}
+
+#next-button-eight {
+    top: 250%;
 }
 
 #submit {
@@ -180,6 +184,13 @@ h2 {
     position: relative;
     bottom: 100%;
     left: 125%;
+}
+
+#man-two {
+    height: 90%;
+    position: relative;
+    right: 80%;
+    bottom: 140%;
 }
 
 #part-one-par {
