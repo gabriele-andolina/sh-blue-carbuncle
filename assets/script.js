@@ -200,7 +200,7 @@ choiceOne.addEventListener("click", function() {
             document.location.reload(true)
     })
         });
-        //1.1.1.2
+        //1.2.1.2
         choiceTwo.addEventListener("click", function() {
             bartenderReplyText.innerHTML = "You can call the Pope if you like. Now buy a drink or get out!"
             choiceOne.hidden = true;
@@ -216,3 +216,73 @@ choiceOne.addEventListener("click", function() {
     })
 
 })
+//2.1
+choiceTwo.addEventListener("click", function() {
+    bartenderReply.hidden = false;
+    bartenderReplyText.innerHTML = "You bet! Bloody cold outside, innit?"
+    choiceOneText.innerHTML = "Cold indeed! If only one had something to eat to warm up... perhaps some fine goose meat. Right, Watson?"
+    choiceTwoText.innerHTML = "Cold indeed! Thankfully, my friend and I warmed our bellies with one of your geese. It was given to us by a friend..."
+
+    //2.1.1
+    choiceOne.addEventListener("click", function() {
+        bartenderReplyText.innerHTML = "Goose! I have some excellent one I bought at the Covent Garden Market."
+        choiceOneText.innerHTML = "Then we shan't fail to try it! Which stall did you buy it from, if I may ask?"
+        choiceTwoText.innerHTML = "Being a fowl fancier myself, I buy my meat there too. Which seller does your goose come from?"
+        //2.1.1.1.
+        choiceOne.addEventListener("click", function() {
+            bartenderReplyText.innerHTML = "From Breckinridge's, sir. You should try it."
+            choiceOne.hidden = true;
+            choiceTwoText.innerHTML = "Dear Watson, we've got what we came here for. Let us eat quickly and go to the stalls.";
+
+            nextButtonTen.hidden = false;
+            nextButtonTen.innerHTML = "Well done! Please keep on reading.";
+            nextButtonTen.addEventListener("click", function() {
+            document.location.reload(true)
+    })
+        });
+        //2.1.1.2
+        choiceTwo.addEventListener("click", function() {
+            bartenderReplyText.innerHTML = "Breckinridge is his name. Excellent meat!"
+            choiceOne.hidden = true;
+            choiceTwo.style.width = "90%";
+            choiceTwoText.innerHTML = "Dear Watson, now we know where to go. Let us eat quickly and go to the stalls.";
+            
+            nextButtonTen.hidden = false;
+            nextButtonTen.innerHTML = "Well done! Please keep on reading.";
+            nextButtonTen.addEventListener("click", function() {
+            document.location.reload(true)
+    })
+        })
+    })
+    //2.2.1
+    choiceTwo.addEventListener("click", function() {
+        bartenderReplyText.innerHTML = "Oh, yes. We had a Christmas club with a dozen geese for a prize."
+        choiceOneText.innerHTML = "The one our friend gave us was excellent. Where did you buy it?"
+        choiceTwoText.innerHTML = "A superb prize it was! Do you happen to remember the seller?"
+        //2.2.1.1.
+        choiceOne.addEventListener("click", function() {
+            bartenderReplyText.innerHTML = "Certainly, sir. Breckinridge is his name. Excellent meat!"
+            choiceOne.hidden = true;
+            choiceTwoText.innerHTML = "Dear Watson, now we know whom to look for. Let us move!";
+
+            nextButtonTen.hidden = false;
+            nextButtonTen.innerHTML = "Well done! Please keep on reading.";
+            nextButtonTen.addEventListener("click", function() {
+            document.location.reload(true)
+    })
+        });
+        //2.2.1.2
+        choiceTwo.addEventListener("click", function() {
+            bartenderReplyText.innerHTML = "At Breckinridge's sir, and it was an excellent purchase!"
+            choiceOne.hidden = true;
+            choiceTwo.style.width = "90%";
+            choiceTwoText.innerHTML = "Dear Watson, we're closer to the solution now. Let us go to Breckinridge's.";
+            
+            nextButtonTen.hidden = false;
+            nextButtonTen.innerHTML = "Well done! Please keep on reading.";
+            nextButtonTen.addEventListener("click", function() {
+            document.location.reload(true)
+    })
+        })
+    })
+})    
