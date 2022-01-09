@@ -283,7 +283,7 @@ select {
     width: 45%;
     height: 40%;
     position: relative;
-    bottom: 50%;
+    bottom: 80%;
     right: 40%;
     border: black 2px solid;
     border-radius: 8px;
@@ -299,18 +299,29 @@ select {
     width: 45%;
     height: 40%;
     position: relative;
-    bottom: 91%;
-    left: 15%;
+    bottom: 121%;
+    left: 14%;
     border: black 2px solid;
     border-radius: 8px;
     background-color: #ADC2A9;
 }
 
-#choice-one-text, #choice-two-text {
+#bartender-reply {
+    width: 40%;
+    height: 35%;
+    position: relative;
+    bottom: 100%;
+    right: 40%;
+    border: black 2px solid;
+    border-radius: 8px;
+    background-color: #A3A847;
+}
+
+#choice-one-text, #choice-two-text, #bartender-reply-text {
     padding: 1px;
+    padding-top: 0;
     font-family: "Raleway", "Times New Roman", sans-serif;
     font-size: 100%;
     font-weight: 900;
     text-align: center;
-    vertical-align: middle;
 }
