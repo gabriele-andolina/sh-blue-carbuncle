@@ -242,6 +242,12 @@ h2 {
     bottom: 150%;
 }
 
+#fireplace {
+    height: 80%;
+    left: -85%;
+    bottom: 150%;
+}
+
 #part-one-par {
     position: relative;
     top: 50%;
