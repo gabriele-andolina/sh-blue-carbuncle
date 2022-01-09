@@ -162,6 +162,17 @@ h2 {
     right: 70%;
 }
 
+#newspaper {
+    height: 50%;
+    position: relative;
+    bottom: 70%;
+    right: 75%;
+}
+
+#ad {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
 #part-one-par {
     position: relative;
     top: 50%;
