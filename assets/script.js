@@ -15,6 +15,7 @@ let nextButtonSix = document.getElementById("next-button-six");
 let nextButtonSeven = document.getElementById("next-button-seven");
 let nextButtonEight = document.getElementById("next-button-eight");
 let nextButtonNine = document.getElementById("next-button-nine");
+let nextButtonTen = document.getElementById("next-button-ten");
 
 let instructions = document.getElementById("instructions");
 instructions.hidden = true;
@@ -100,6 +101,7 @@ nextButtonNine.onclick = function() {
     partTen.hidden = false;
     nextButtonNine.hidden = true;
     partTen.scrollIntoView({behavior: "smooth"});
+    nextButtonTen.hidden = true;
 }
 
 
