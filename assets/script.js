@@ -46,6 +46,8 @@ let choiceOne = document.getElementById("choice-one");
 let choiceOneText = document.getElementById("choice-one-text");
 let choiceTwo = document.getElementById("choice-two");
 let choiceTwoText = document.getElementById("choice-two-text");
+let partEleven = document.getElementById("part-eleven");
+partEleven.hidden = true;
 
 /* Button functions, show the next portion of the story
 Inspired from Codecademy's "Piano Keys" project
@@ -143,6 +145,8 @@ let checkAnswers = () => {
 };
 checkAnswersButton.addEventListener("click", checkAnswers);
 
+// Second JavaScript interaction: questioning the pub owner
+//Losing choice
 //1.1
 choiceOne.addEventListener("click", function() {
     bartenderReply.hidden = false;
@@ -213,6 +217,8 @@ choiceOne.addEventListener("click", function() {
     })
 
 })
+
+// Winning choice
 //2.1
 choiceTwo.addEventListener("click", function() {
     bartenderReply.hidden = false;
@@ -234,7 +240,8 @@ choiceTwo.addEventListener("click", function() {
             nextButtonTen.hidden = false;
             nextButtonTen.innerHTML = "Well done! Please keep on reading.";
             nextButtonTen.addEventListener("click", function() {
-            document.location.reload(true)
+            partEleven.hidden = false;
+            partEleven.scrollIntoView({behavior: "smooth"})
     })
         });
         //2.1.1.2
@@ -247,7 +254,8 @@ choiceTwo.addEventListener("click", function() {
             nextButtonTen.hidden = false;
             nextButtonTen.innerHTML = "Well done! Please keep on reading.";
             nextButtonTen.addEventListener("click", function() {
-            document.location.reload(true)
+            partEleven.hidden = false;
+            partEleven.scrollIntoView({behavior: "smooth"})
     })
         })
     })
@@ -265,7 +273,8 @@ choiceTwo.addEventListener("click", function() {
             nextButtonTen.hidden = false;
             nextButtonTen.innerHTML = "Well done! Please keep on reading.";
             nextButtonTen.addEventListener("click", function() {
-            document.location.reload(true)
+            partEleven.hidden = false;
+            partEleven.scrollIntoView({behavior: "smooth"})
     })
         });
         //2.2.1.2
@@ -278,7 +287,8 @@ choiceTwo.addEventListener("click", function() {
             nextButtonTen.hidden = false;
             nextButtonTen.innerHTML = "Well done! Please keep on reading.";
             nextButtonTen.addEventListener("click", function() {
-            document.location.reload(true)
+            partEleven.hidden = false;
+            partEleven.scrollIntoView({behavior: "smooth"})
     })
         })
     })
