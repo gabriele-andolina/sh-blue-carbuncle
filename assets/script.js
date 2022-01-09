@@ -148,8 +148,36 @@ choiceOne.addEventListener("click", function() {
     bartenderReplyText.innerHTML = "Evenin', sir. Need any help?"
     choiceOneText.innerHTML = "Just some quick information. Where did you buy those geese you sold for Christmas?"
     choiceTwoText.innerHTML = "Yes, I'm here on an investigation. Tell me where you bought those geese you sold for Christmas."
-
     
+    choiceOne.addEventListener("click", function() {
+        bartenderReplyText.innerHTML = "Geese... what geese? How about a pint instead?"
+        choiceOneText.innerHTML = "I'm serious. Where did you buy those geese?"
+        choiceTwoText.innerHTML = "I'm not joking! I need to know that information now!"
 
-    
+        choiceOne.addEventListener("click", function() {
+            bartenderReplyText.innerHTML = "I'm serious too. Buy a drink or get out!"
+            choiceOne.hidden = true;
+            choiceTwoText.innerHTML = "Dear Watson, I have been too hasty and failed to get that information. We won't be able to solve this case...";
+
+            nextButtonTen.hidden = false;
+            nextButtonTen.innerHTML = "Play again. Click here to refresh the page.";
+            nextButtonTen.addEventListener("click", function() {
+            document.location.reload(true)
+    })
+        });
+
+        choiceTwo.addEventListener("click", function() {
+            bartenderReplyText.innerHTML = "I'm not joking either. Buy a drink or get out!"
+            choiceOne.hidden = true;
+            choiceTwo.style.width = "90%";
+            choiceTwoText.innerHTML = "Dear Watson, I have been too hasty and failed to get that information. We won't be able to solve this case...";
+            
+            nextButtonTen.hidden = false;
+            nextButtonTen.innerHTML = "Play again. Click here to refresh the page.";
+            nextButtonTen.addEventListener("click", function() {
+            document.location.reload(true)
+    })
+        })
+    })
+
 })
