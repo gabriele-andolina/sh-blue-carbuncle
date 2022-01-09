@@ -31,7 +31,7 @@ h1 {
 }
 
 #main-button, #game-afoot-button, #next-button-one, #next-button-two, #submit, #next-button-four,
-#next-button-five, #next-button-six {
+#next-button-five, #next-button-six, #next-button-seven {
     width: 20%;
     position: absolute;
     top: 90%;
@@ -56,7 +56,7 @@ h1 {
     left: 40%;
 }
 
-#next-button-two {
+#next-button-two, #next-button-seven {
     top: 195%;
 }
 
@@ -65,7 +65,7 @@ h1 {
 }
 
 #next-button-six {
-    top: 130%;
+    top: 140%;
 }
 
 #submit {
@@ -77,7 +77,8 @@ h1 {
 }
 
 #main-button:hover, #game-afoot-button:hover, #next-button-one:hover, #next-button-two:hover,
-#submit:hover, #next-button-four:hover, #next-button-five:hover, #next-button-six:hover {
+#submit:hover, #next-button-four:hover, #next-button-five:hover, #next-button-six:hover,
+#next-button-seven:hover {
     color: #1C6DD0;
     background-color: white;
     border: #1C6DD0 2px solid;
@@ -172,6 +173,13 @@ h2 {
 #ad {
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-size: medium;
+}
+
+#man {
+    height: 100%;
+    position: relative;
+    bottom: 100%;
+    left: 125%;
 }
 
 #part-one-par {
