@@ -32,7 +32,7 @@ h1 {
 
 #main-button, #game-afoot-button, #next-button-one, #next-button-two, #submit, #next-button-four,
 #next-button-five, #next-button-six, #next-button-seven, #next-button-eight, #next-button-nine,
-#next-button-ten {
+#next-button-ten, #next-button-eleven {
     width: 20%;
     position: absolute;
     top: 90%;
@@ -69,7 +69,7 @@ h1 {
     top: 140%;
 }
 
-#next-button-eight {
+#next-button-eight, #next-button-eleven {
     top: 250%;
 }
 
@@ -83,7 +83,6 @@ h1 {
     top: -115%;
     left: -6%;
 }
-
 
 #pub-instructions {
     position: relative;
@@ -100,8 +99,8 @@ h1 {
 
 #main-button:hover, #game-afoot-button:hover, #next-button-one:hover, #next-button-two:hover,
 #submit:hover, #next-button-four:hover, #next-button-five:hover, #next-button-six:hover,
-#next-button-seven:hover, #next-button-eight:hover, #next-button-nine:hover, #next-button-ten:hover  
-{
+#next-button-seven:hover, #next-button-eight:hover, #next-button-nine:hover, #next-button-ten:hover,
+#next-button-eleven:hover {
     color: #1C6DD0;
     background-color: white;
     border: #1C6DD0 2px solid;

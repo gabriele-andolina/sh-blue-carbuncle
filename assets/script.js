@@ -143,9 +143,6 @@ let checkAnswers = () => {
 };
 checkAnswersButton.addEventListener("click", checkAnswers);
 
-
-
-
 //1.1
 choiceOne.addEventListener("click", function() {
     bartenderReply.hidden = false;
@@ -285,4 +282,4 @@ choiceTwo.addEventListener("click", function() {
     })
         })
     })
-})    
+});    
