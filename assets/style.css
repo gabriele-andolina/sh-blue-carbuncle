@@ -31,7 +31,8 @@ h1 {
 }
 
 #main-button, #game-afoot-button, #next-button-one, #next-button-two, #submit, #next-button-four,
-#next-button-five, #next-button-six, #next-button-seven, #next-button-eight, #next-button-nine {
+#next-button-five, #next-button-six, #next-button-seven, #next-button-eight, #next-button-nine,
+#next-button-ten {
     width: 20%;
     position: absolute;
     top: 90%;
@@ -76,6 +77,16 @@ h1 {
     top: 120%;
 }
 
+#next-button-ten {
+    top: 140%;
+    left: 2%;
+}
+
+#pub-instructions {
+    position: relative;
+    right: 35%;
+}
+
 #submit {
     width: 20vw;
     margin-top: 10%;
@@ -86,7 +97,8 @@ h1 {
 
 #main-button:hover, #game-afoot-button:hover, #next-button-one:hover, #next-button-two:hover,
 #submit:hover, #next-button-four:hover, #next-button-five:hover, #next-button-six:hover,
-#next-button-seven:hover, #next-button-eight:hover, #next-button-nine:hover  {
+#next-button-seven:hover, #next-button-eight:hover, #next-button-nine:hover, #next-button-ten:hover  
+{
     color: #1C6DD0;
     background-color: white;
     border: #1C6DD0 2px solid;
@@ -123,6 +135,10 @@ h1 {
 
 #part-nine {
     margin-top: 50%;
+}
+
+#alpha-inn-inside {
+    margin-top: 25%;
 }
 
 h2, p {
@@ -205,6 +221,13 @@ h2 {
     position: relative;
     height: 90%;
     bottom: 75%;
+}
+
+#bartender {
+    width: 120%;
+    position: relative;
+    top: 10%;
+    right: 50%;
 }
 
 #part-one-par {
