@@ -11,6 +11,7 @@ let answerKeys = ["h", "f", "a", "b", "g", "j", "e", "i", "d", "c"];
 let selectedDed = [];
 let nextButtonFour = document.getElementById("next-button-four");
 let nextButtonFive = document.getElementById("next-button-five");
+let nextButtonSix = document.getElementById("next-button-six");
 
 let instructions = document.getElementById("instructions");
 instructions.hidden = true;
@@ -26,6 +27,8 @@ let partFive = document.getElementById("part-five");
 partFive.hidden = true;
 let partSix = document.getElementById("part-six");
 partSix.hidden = true;
+let partSeven = document.getElementById("part-seven");
+partSeven.hidden = true;
 
 /* Button functions, show the next portion of the story
 Inspired from Codecademy's "Piano Keys" project
@@ -64,6 +67,12 @@ nextButtonFive.onclick = function() {
     partSix.hidden = false;
     nextButtonFive.hidden = true;
     partSix.scrollIntoView({behavior: "smooth"});
+}
+
+nextButtonSix.onclick = function() {
+    partSeven.hidden = false;
+    nextButtonSix.hidden = true;
+    partSeven.scrollIntoView({behavior: "smooth"});
 }
 
 
