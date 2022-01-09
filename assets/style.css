@@ -230,10 +230,6 @@ h2 {
     right: 50%;
 }
 
-#bartender:hover {
-    cursor: pointer;
-}
-
 #part-one-par {
     position: relative;
     top: 50%;

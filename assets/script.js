@@ -39,6 +39,13 @@ let partNine = document.getElementById("part-nine");
 partNine.hidden = true;
 let partTen = document.getElementById("alpha-inn-inside");
 partTen.hidden = true;
+let bartenderReply = document.getElementById("bartender-reply");
+bartenderReply.hidden = true;
+let bartenderReplyText = document.getElementById("bartender-reply-text");
+let choiceOne = document.getElementById("choice-one");
+let choiceOneText = document.getElementById("choice-one-text");
+let choiceTwo = document.getElementById("choice-two");
+let choiceTwoText = document.getElementById("choice-two-text");
 
 /* Button functions, show the next portion of the story
 Inspired from Codecademy's "Piano Keys" project
@@ -135,3 +142,14 @@ let checkAnswers = () => {
     }
 };
 checkAnswersButton.addEventListener("click", checkAnswers);
+
+choiceOne.addEventListener("click", function() {
+    bartenderReply.hidden = false;
+    bartenderReplyText.innerHTML = "Evenin', sir. Need any help?"
+    choiceOneText.innerHTML = "Just some quick information. Where did you buy those geese you sold for Christmas?"
+    choiceTwoText.innerHTML = "Yes, I'm here on an investigation. Tell me where you bought those geese you sold for Christmas."
+
+    
+
+    
+})
