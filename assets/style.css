@@ -31,8 +31,8 @@ h1 {
     left: 28vw;
 }
 
-#main-button, #game-afoot-button, #next-button-one, #next-button-two, #submit, #next-button-four,
-#next-button-five, #next-button-six, #next-button-seven, #next-button-eight, #next-button-nine,
+#main-button, #game-afoot-button, #next-button-one, #next-button-two, #submit, #next-button-four-alternate,
+#next-button-four, #next-button-five, #next-button-six, #next-button-seven, #next-button-eight, #next-button-nine,
 #next-button-ten, #next-button-eleven, #next-button-twelve {
     width: 20%;
     position: absolute;
@@ -74,7 +74,7 @@ h1 {
     top: 140%;
 }
 
-#next-button-seven {
+#next-button-four-alternate, #next-button-seven {
     top: 175%
 }
 
@@ -115,7 +115,7 @@ h1 {
 }
 
 #main-button:hover, #game-afoot-button:hover, #next-button-one:hover, #next-button-two:hover,
-#submit:hover, #next-button-four:hover, #next-button-five:hover, #next-button-six:hover,
+#submit:hover, #next-button-four-alternate:hover, #next-button-four:hover, #next-button-five:hover, #next-button-six:hover,
 #next-button-seven:hover, #next-button-eight:hover, #next-button-nine:hover, #next-button-ten:hover,
 #next-button-eleven:hover, #next-button-twelve:hover {
     color: #1C6DD0;
@@ -145,7 +145,7 @@ h1 {
 }
 
 #part-four {
-    margin-top: 10%;
+    margin-top: 30%;
 }
 
 #part-eight {

@@ -1,6 +1,4 @@
-/* 
-1) Buttons variables 
-2) Story parts variables with initial hidden status*/
+// 1) Buttons variables 
 const mainButton = document.getElementById("main-button");
 const gameAfootButton = document.getElementById("game-afoot-button");
 const nextButtonOne = document.getElementById("next-button-one");
@@ -9,6 +7,7 @@ const checkAnswersButton = document.getElementById("submit");
 const answers = document.getElementsByClassName("answers");
 const answerKeys = ["h", "f", "a", "b", "g", "j", "e", "i", "d", "c"];
 const selectedDed = [];
+const alternateButtonFour = document.getElementById("next-button-four-alternate");
 const nextButtonFour = document.getElementById("next-button-four");
 const nextButtonFive = document.getElementById("next-button-five");
 const nextButtonSix = document.getElementById("next-button-six");
@@ -18,37 +17,41 @@ const nextButtonNine = document.getElementById("next-button-nine");
 const nextButtonTen = document.getElementById("next-button-ten");
 const nextButtonEleven = document.getElementById("next-button-eleven");
 const instructions = document.getElementById("instructions");
-instructions.hidden = true;
 const partOne = document.getElementById("part-one");
-partOne.hidden = true;
 const partTwo = document.getElementById("part-two");
-partTwo.hidden = true;
 const observationDeductionGame = document.getElementById("observation-deduction-game");
-observationDeductionGame.hidden = true;
+const quizSolution = document.getElementById("quiz-solution");
 const partFour = document.getElementById("part-four");
-partFour.hidden = true;
 const partFive = document.getElementById("part-five");
-partFive.hidden = true;
 const partSix = document.getElementById("part-six");
-partSix.hidden = true;
 const partSeven = document.getElementById("part-seven");
-partSeven.hidden = true;
 const partEight = document.getElementById("part-eight");
-partEight.hidden = true;
 const partNine = document.getElementById("part-nine");
-partNine.hidden = true;
 const partTen = document.getElementById("alpha-inn-inside");
-partTen.hidden = true;
 const bartenderReply = document.getElementById("bartender-reply");
-bartenderReply.hidden = true;
 const bartenderReplyText = document.getElementById("bartender-reply-text");
 const choiceOne = document.getElementById("choice-one");
 const choiceOneText = document.getElementById("choice-one-text");
 const choiceTwo = document.getElementById("choice-two");
 const choiceTwoText = document.getElementById("choice-two-text");
 const partEleven = document.getElementById("part-eleven");
-partEleven.hidden = true;
 const partTwelve = document.getElementById("part-twelve");
+
+//2) Story parts variables with initial hidden status
+instructions.hidden = true;
+partOne.hidden = true;
+partTwo.hidden = true;
+observationDeductionGame.hidden = true;
+quizSolution.hidden = true;
+partFour.hidden = true;
+partFive.hidden = true;
+partSix.hidden = true;
+partSeven.hidden = true;
+partEight.hidden = true;
+partNine.hidden = true;
+partTen.hidden = true;
+bartenderReply.hidden = true;
+partEleven.hidden = true;
 partTwelve.hidden = true;
 
 /* Button functions, show the next portion of the story
@@ -78,7 +81,14 @@ nextButtonTwo.onclick = function() {
     observationDeductionGame.scrollIntoView({behavior: "smooth"});
 };
 
+alternateButtonFour.onclick = function() {
+    partFour.hidden = false;
+    alternateButtonFour.hidden = true;
+    partFour.scrollIntoView({behavior: "smooth"});
+}
+
 nextButtonFour.onclick = function() {
+    quizSolution.hidden = true;
     partFive.hidden = false;
     nextButtonFour.hidden = true;
     partFive.scrollIntoView({behavior: "smooth"});
@@ -134,11 +144,13 @@ let moveOn = () => {
     }
 };
 
-// let tryAgain = () => {
-//     for ( let i = 0; i < answers.length; i++) {
-//         answers[i].options[answers[i].selectedIndex].value = "choose";
-//         checkAnswersButton.innerHTML = "Check your answers."
-//         checkAnswersButton.addEventListener("click", checkAnswers);
+// let askSherlock = () => {
+//     if (checkAnswersButton.innerHTML === "Hmm... not quite, Watson. Let me show you." ) {
+//         checkAnswersButton.addEventListener("click", function() {
+//             quizSolution.hidden = false;
+//             checkAnswersButton.hidden = true;
+//             quizSolution.scrollIntoView({behavior: "smooth"});
+//         })
 //     }
 // }
 
@@ -153,14 +165,26 @@ let checkAnswers = () => {
                 checkAnswersButton.innerHTML = "Well done, Dr Watson! Let us move on.";
                 moveOn();
             } 
-            // else {
-            //     checkAnswersButton.innerHTML = "Hmm... not quite, Watson. Try again.";
-            //     checkAnswersButton.addEventListener("click", tryAgain);
-            // }
+            else {
+                checkAnswersButton.innerHTML = "Hmm... not quite, Watson. Let me show you.";
+                checkAnswersButton.addEventListener("click", function() {
+                    quizSolution.hidden = false;
+                    checkAnswersButton.hidden = true;
+                    quizSolution.scrollIntoView({behavior: "smooth"});
+                });
+            }
         }
     }
 };
 checkAnswersButton.addEventListener("click", checkAnswers);
+
+// if (quizSolution.hidden = false) {
+//     alternateButtonFour.onclick = function() {
+//         partFour.hidden = false;
+//         alternateButtonFour.hidden = true;
+//         partFour.scrollIntoView({behavior: "smooth"});
+//     }
+// }
 
 // Second JavaScript interaction: questioning the pub owner
 //Losing choice
