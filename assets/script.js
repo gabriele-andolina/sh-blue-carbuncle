@@ -1,55 +1,54 @@
 /* 
 1) Buttons variables 
 2) Story parts variables with initial hidden status*/
-let mainButton = document.getElementById("main-button");
-let gameAfootButton = document.getElementById("game-afoot-button");
-let nextButtonOne = document.getElementById("next-button-one");
-let nextButtonTwo = document.getElementById("next-button-two");
-let checkAnswersButton = document.getElementById("submit");
-let answers = document.getElementsByClassName("answers");
-let answerKeys = ["h", "f", "a", "b", "g", "j", "e", "i", "d", "c"];
-let selectedDed = [];
-let nextButtonFour = document.getElementById("next-button-four");
-let nextButtonFive = document.getElementById("next-button-five");
-let nextButtonSix = document.getElementById("next-button-six");
-let nextButtonSeven = document.getElementById("next-button-seven");
-let nextButtonEight = document.getElementById("next-button-eight");
-let nextButtonNine = document.getElementById("next-button-nine");
-let nextButtonTen = document.getElementById("next-button-ten");
-let nextButtonEleven = document.getElementById("next-button-eleven");
-
-let instructions = document.getElementById("instructions");
+const mainButton = document.getElementById("main-button");
+const gameAfootButton = document.getElementById("game-afoot-button");
+const nextButtonOne = document.getElementById("next-button-one");
+const nextButtonTwo = document.getElementById("next-button-two");
+const checkAnswersButton = document.getElementById("submit");
+const answers = document.getElementsByClassName("answers");
+const answerKeys = ["h", "f", "a", "b", "g", "j", "e", "i", "d", "c"];
+const selectedDed = [];
+const nextButtonFour = document.getElementById("next-button-four");
+const nextButtonFive = document.getElementById("next-button-five");
+const nextButtonSix = document.getElementById("next-button-six");
+const nextButtonSeven = document.getElementById("next-button-seven");
+const nextButtonEight = document.getElementById("next-button-eight");
+const nextButtonNine = document.getElementById("next-button-nine");
+const nextButtonTen = document.getElementById("next-button-ten");
+const nextButtonEleven = document.getElementById("next-button-eleven");
+const instructions = document.getElementById("instructions");
 instructions.hidden = true;
-let partOne = document.getElementById("part-one");
+const partOne = document.getElementById("part-one");
 partOne.hidden = true;
-let partTwo = document.getElementById("part-two");
+const partTwo = document.getElementById("part-two");
 partTwo.hidden = true;
-let observationDeductionGame = document.getElementById("observation-deduction-game");
+const observationDeductionGame = document.getElementById("observation-deduction-game");
 observationDeductionGame.hidden = true;
-let partFour = document.getElementById("part-four");
+const partFour = document.getElementById("part-four");
 partFour.hidden = true;
-let partFive = document.getElementById("part-five");
+const partFive = document.getElementById("part-five");
 partFive.hidden = true;
-let partSix = document.getElementById("part-six");
+const partSix = document.getElementById("part-six");
 partSix.hidden = true;
-let partSeven = document.getElementById("part-seven");
+const partSeven = document.getElementById("part-seven");
 partSeven.hidden = true;
-let partEight = document.getElementById("part-eight");
+const partEight = document.getElementById("part-eight");
 partEight.hidden = true;
-let partNine = document.getElementById("part-nine");
+const partNine = document.getElementById("part-nine");
 partNine.hidden = true;
-let partTen = document.getElementById("alpha-inn-inside");
+const partTen = document.getElementById("alpha-inn-inside");
 partTen.hidden = true;
-let bartenderReply = document.getElementById("bartender-reply");
+const bartenderReply = document.getElementById("bartender-reply");
 bartenderReply.hidden = true;
-let bartenderReplyText = document.getElementById("bartender-reply-text");
-let choiceOne = document.getElementById("choice-one");
-let choiceOneText = document.getElementById("choice-one-text");
-let choiceTwo = document.getElementById("choice-two");
-let choiceTwoText = document.getElementById("choice-two-text");
-let partEleven = document.getElementById("part-eleven");
+const bartenderReplyText = document.getElementById("bartender-reply-text");
+const choiceOne = document.getElementById("choice-one");
+const choiceOneText = document.getElementById("choice-one-text");
+const choiceTwo = document.getElementById("choice-two");
+const choiceTwoText = document.getElementById("choice-two-text");
+const partEleven = document.getElementById("part-eleven");
 partEleven.hidden = true;
-let partTwelve = document.getElementById("part-twelve");
+const partTwelve = document.getElementById("part-twelve");
 partTwelve.hidden = true;
 
 /* Button functions, show the next portion of the story
@@ -135,19 +134,28 @@ let moveOn = () => {
     }
 };
 
+// let tryAgain = () => {
+//     for ( let i = 0; i < answers.length; i++) {
+//         answers[i].options[answers[i].selectedIndex].value = "choose";
+//         checkAnswersButton.innerHTML = "Check your answers."
+//         checkAnswersButton.addEventListener("click", checkAnswers);
+//     }
+// }
+
 let checkAnswers = () => {
     for (let i = 0; i < answers.length; i++) {
         selectedDed.push(answers[i].options[answers[i].selectedIndex].value);
     }
-//remove != and restore === + else statement
+    
     for (let i = 0; i < selectedDed.length; i++) {
         for (let j = 0; j < answerKeys.length; j++) {
-            if (selectedDed[i] != answerKeys[i]) {
+            if (selectedDed[i] === answerKeys[i]) {
                 checkAnswersButton.innerHTML = "Well done, Dr Watson! Let us move on.";
                 moveOn();
             } 
             // else {
-            //     checkAnswersButton.innerHTML = "Hmm... not quite Dr Watson. Check your answers and try again.";
+            //     checkAnswersButton.innerHTML = "Hmm... not quite, Watson. Try again.";
+            //     checkAnswersButton.addEventListener("click", tryAgain);
             // }
         }
     }
