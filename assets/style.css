@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Raleway&family=Tangerine:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap');
 
 * {
     margin: 0;
@@ -15,7 +16,7 @@
 h1 {
     position: relative;
     text-align: center;
-    font-family: Tangerine;
+    font-family: "Tangerine", "Times New Roman", sans-serif;
     font-size: 50px;
 }
 
@@ -38,7 +39,7 @@ h1 {
     top: 90%;
     left: 40%;
     text-align: center;
-    font-family: Tangerine;
+    font-family: "Tangerine", "Times New Roman", sans-serif;
     color: white;
     background-color: #1C6DD0;
     font-size: 50px;
@@ -52,9 +53,13 @@ h1 {
     left: 10vw;
 }
 
-#next-button-one, #next-button-four {
-    top: 175%;
+#next-button-one {
+    top: 155%;
     left: 40%;
+}
+
+#next-button-four {
+    top: 150%;
 }
 
 #next-button-two, #next-button-seven {
@@ -62,15 +67,23 @@ h1 {
 }
 
 #next-button-five {
-    top: 240%;
+    top: 230%;
 }
 
 #next-button-six {
     top: 140%;
 }
 
-#next-button-eight, #next-button-eleven {
+#next-button-seven {
+    top: 175%
+}
+
+#next-button-eight {
     top: 250%;
+}
+
+#next-button-eleven {
+    top: 230%;
 }
 
 #next-button-twelve {
@@ -128,22 +141,26 @@ h1 {
 }
 
 #part-two {
-    margin-top: 30%;
+    margin-top: 20%;
 }
 
 #part-four {
     margin-top: 10%;
 }
 
-#part-six, #part-nine {
-    margin-top: 40%;
+#part-eight {
+    margin-top: 30%;
 }
 
-#part-nine, #part-twelve {
+#part-nine {
+    margin-top: 62%;
+}
+
+#part-six, #part-twelve {
     margin-top: 50%;
 }
 
-#alpha-inn-inside {
+#part-five, #alpha-inn-inside {
     margin-top: 25%;
 }
 
@@ -187,7 +204,7 @@ h2 {
 
 #sherlock-sitting {
     position: relative;
-    bottom: 60%;
+    bottom: 70%;
 }
 
 #goose {
@@ -205,7 +222,7 @@ h2 {
 }
 
 #ad {
-    font-family: "Century Old Style";
+    font-family: "Playfair Display";
     font-size: 80%;
 }
 
@@ -250,7 +267,7 @@ h2 {
 
 #part-one-par {
     position: relative;
-    top: 50%;
+    top: 30%;
 }
 
 #observation-deduction-game {
@@ -287,7 +304,7 @@ select {
     position: relative;
     top: 2vh;
     left: 5vw;
-    font-family: Raleway;
+    font-family: "Raleway", "Times New Roman", sans-serif;
     font-size: 15px;
     border: black 1px solid;
     cursor: pointer;
@@ -324,7 +341,7 @@ select {
     width: 40%;
     height: 35%;
     position: relative;
-    bottom: 100%;
+    bottom: 90%;
     right: 40%;
     border: black 2px solid;
     border-radius: 8px;
@@ -335,7 +352,7 @@ select {
     padding: 1px;
     padding-top: 0;
     font-family: "Raleway", "Times New Roman", sans-serif;
-    font-size: 100%;
+    font-size: 90%;
     font-weight: 900;
     text-align: center;
 }
