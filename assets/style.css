@@ -381,3 +381,412 @@ select {
     font-weight: 900;
     text-align: center;
 }
+
+/* Media queries */
+/* For screens size of 568px and down */
+@media screen and (max-width: 568px) {
+#main {
+width: 70%;
+height: 400px;
+margin: 5vh 15%;
+}
+
+h1 {
+    position: relative;
+    text-align: center;
+    font-family: "Tangerine", "Times New Roman", sans-serif;
+    font-size: 40px;
+}
+
+#blue:hover {
+    color: #1C6DD0;
+}
+
+#intro-image {
+    height: 250px;
+    position: relative;
+    top: 5%;
+    left: 38%;
+}
+
+#main-button, #game-afoot-button, #next-button-one, #next-button-two, #submit, #next-button-four-alternate,
+#next-button-four, #next-button-five, #next-button-six, #next-button-seven, #next-button-eight, #next-button-nine,
+#next-button-ten, #next-button-eleven, #next-button-twelve {
+    width: 50%;
+    position: absolute;
+    top: 80%;
+    left: 25%;
+    text-align: center;
+    font-family: "Tangerine", "Times New Roman", sans-serif;
+    color: white;
+    background-color: #1C6DD0;
+    font-size: 50px;
+    border: #1C6DD0 2px solid;
+    border-radius: 8px;
+}
+
+#game-afoot-button {
+    width: 120%;
+    top: 230%;
+    left: 25%;
+}
+
+#next-button-one {
+    top: 220%;
+    left: 60%;
+}
+
+#next-button-four {
+    top: 220%;
+    left: 60%;
+}
+
+#next-button-two, #next-button-seven {
+    top: 230%;
+    left: 50%;
+}
+
+#next-button-five {
+    top: 270%;
+    left: 60%;
+}
+
+#next-button-six {
+    top: 190%;
+    left: 60%;
+}
+
+#next-button-four-alternate {
+    top: 220%;
+    left: 60%;
+}
+
+#next-button-seven {
+    top: 270%;
+    left: 60%;
+}
+
+#next-button-eight {
+    top: 320%;
+    left: 60%;
+}
+
+#next-button-eleven {
+    top: 290%;
+    left: 60%;
+}
+
+#next-button-twelve {
+    top: 320%;
+    left: 60%;
+}
+
+#next-button-nine {
+    top: 195%;
+    left: 60%;
+}
+
+#next-button-ten {
+    width: 140%;
+    position: relative;
+    top: 85%;
+    left: 20%;
+}
+
+#play-again {
+    width: 80%;
+    left: 15%;
+}
+
+#pub-instructions {
+    position: relative;
+    top: 70%;
+    right: 35%;
+}
+
+#submit {
+    width: 50vw;
+    margin-top: 10%;
+    position: relative;
+    top: 100%;
+    left: 1%;
+}
+
+#main-button:hover, #game-afoot-button:hover, #next-button-one:hover, #next-button-two:hover,
+#submit:hover, #next-button-four-alternate:hover, #next-button-four:hover, #next-button-five:hover, #next-button-six:hover,
+#next-button-seven:hover, #next-button-eight:hover, #next-button-nine:hover, #next-button-ten:hover,
+#next-button-eleven:hover, #next-button-twelve:hover {
+    color: #1C6DD0;
+    background-color: white;
+    border: #1C6DD0 2px solid;
+    cursor: pointer;
+}
+
+.type-one-div {
+    width: 40%;
+    height: 400px;
+    margin: 20% 15%;
+    position: relative;
+    top: 10%;
+}
+
+.type-two-div {
+    width: 40%;
+    height: 400px;
+    margin: 70% 15%;
+    position: relative;
+    left: 1%;
+}
+
+#part-two {
+    position: relative;
+    top: 50%;
+    margin-top: 80%;
+}
+
+#part-four {
+    margin-top: 80%;
+}
+
+#part-eight {
+    margin-top: 110%;
+}
+
+#part-nine {
+    margin-top: 155%;
+}
+
+#part-six, #part-eleven {
+    margin-top: 110%;
+}
+
+#part-twelve {
+    margin-top: 130%;
+}
+
+#part-five, #alpha-inn-inside {
+    margin-top: 25%;
+}
+
+h2, p {
+    width: 170%;
+    position: relative;
+    top: 15%;
+    left: 3%;
+    margin-top: 10%;
+    font-family: Raleway;
+    font-size: 120%;
+    text-align: justify;
+    line-height: 150%;
+    font-style: italic;
+}
+
+h2 {
+    text-align: center;
+    font-size: 30px;
+}
+
+#instruction-paragraph {
+    font-style: normal;
+}
+
+.image-one {
+    height: 200px;
+    position: relative;
+    top: 15%;
+    left: 25%;
+}
+
+.image-two {
+    height: 450px;
+    position: relative;
+    bottom: 90%;
+    right: 100%;
+}
+
+#hat {
+    top: 25%;
+    left: 40%;
+}
+
+#sherlock-sitting {
+    height: 100%;
+    position: relative;
+    top: 30%;
+    right: 35%;
+}
+
+#goose {
+    height: 70%;
+    position: relative;
+    top: 30%;
+    left: 50%;
+}
+
+#diamond {
+    top: 20%;
+    left: 40%;
+}
+
+#newspaper {
+    height: 50%;
+    position: relative;
+    top: 30%;
+    left: 35%;
+}
+
+#ad {
+    font-family: "Playfair Display";
+    font-size: 80%;
+}
+
+#man {
+    height: 100%;
+    position: relative;
+    top: 25%;
+    left: 70%;
+}
+
+#man-two {
+    height: 90%;
+    position: relative;
+    left: 15%;
+    top: 30%;
+}
+
+#door {
+    position: relative;
+    height: 90%;
+    top: 30%;
+    left: 35%;
+}
+
+#bartender {
+    width: 160%;
+    position: relative;
+    top: 80%;
+    left: 5%;
+}
+
+#market-stall {
+    height: 100%;
+    position: relative;
+    bottom: 150%;
+    left: 5%;
+}
+
+#fireplace {
+    height: 80%;
+    left: 5%;
+    top: 20%;
+}
+
+#final-image {
+    height: 100px;
+    position: relative;
+    top: 140%;
+    left: 25%;
+}
+
+#congrats-text {
+    margin-top: 60%;
+    position: relative;
+    top: 130%;
+}
+
+#part-one-par {
+    position: relative;
+    top: 30%;
+}
+
+#observation-deduction-game {
+    height: 100%;
+    position: relative;
+    margin-top: 60%;
+}
+
+#observations {
+    width: 50%;
+    position: relative;
+    top: 20vh;
+    left: 25%;
+}
+
+.observation {
+    width: 50vw;
+    height: 25vh;
+    border: black 1px solid;
+    position: relative;
+    border-radius: 8px;
+    background-color: #FFC900;
+}
+
+.observation p {
+    width: 90%;
+    position: relative;
+    left: 5%;
+    text-align: center;
+    vertical-align: middle;
+    margin: 2%;
+    font-size: 110%
+}
+
+select {
+    width: 40vw;
+    position: relative;
+    top: 5vh;
+    left: 5vw;
+    font-family: "Raleway", "Times New Roman", sans-serif;
+    font-size: 15px;
+    border: black 1px solid;
+    cursor: pointer;
+}
+
+#choice-one {
+    width: 130%;
+    height: 25%;
+    position: relative;
+    top: 76%;
+    left: 19%;
+    border: black 2px solid;
+    border-radius: 8px;
+    background-color: #B8DFD8;
+}
+
+#choice-one:hover, #choice-one-text:hover, 
+#choice-two:hover, #choice-two-text:hover {
+    cursor: pointer;
+}
+
+#choice-two {
+    width: 130%;
+    height: 25%;
+    position: relative;
+    top: 80%;
+    left: 19%;
+    border: black 2px solid;
+    border-radius: 8px;
+    background-color: #ADC2A9;
+}
+
+#bartender-reply {
+    width: 130%;
+    height: 25%;
+    position: relative;
+    top: 65%;
+    left: 19%;
+    border: black 2px solid;
+    border-radius: 8px;
+    background-color: #A3A847;
+}
+
+#choice-one-text, #choice-two-text, #bartender-reply-text {
+    width: 90%;
+    position: relative;
+    top: auto;
+    font-family: "Raleway", "Times New Roman", sans-serif;
+    font-size: 90%;
+    font-weight: 900;
+    text-align: center;
+}
+}

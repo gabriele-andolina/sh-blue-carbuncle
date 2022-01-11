@@ -276,6 +276,7 @@ choiceTwo.addEventListener("click", function() {
             nextButtonTen.innerHTML = "Well done! Please keep on reading.";
             nextButtonTen.addEventListener("click", function() {
             partEleven.hidden = false;
+            nextButtonTen.hidden = true;
             partEleven.scrollIntoView({behavior: "smooth"})
     })
         });
@@ -290,6 +291,7 @@ choiceTwo.addEventListener("click", function() {
             nextButtonTen.innerHTML = "Well done! Please keep on reading.";
             nextButtonTen.addEventListener("click", function() {
             partEleven.hidden = false;
+            nextButtonTen.hidden = true;
             partEleven.scrollIntoView({behavior: "smooth"})
     })
         })
@@ -309,6 +311,7 @@ choiceTwo.addEventListener("click", function() {
             nextButtonTen.innerHTML = "Well done! Please keep on reading.";
             nextButtonTen.addEventListener("click", function() {
             partEleven.hidden = false;
+            nextButtonTen.hidden = true;
             partEleven.scrollIntoView({behavior: "smooth"})
     })
         });
@@ -323,6 +326,7 @@ choiceTwo.addEventListener("click", function() {
             nextButtonTen.innerHTML = "Well done! Please keep on reading.";
             nextButtonTen.addEventListener("click", function() {
             partEleven.hidden = false;
+            nextButtonTen.hidden = true;
             partEleven.scrollIntoView({behavior: "smooth"})
     })
         })
