@@ -7,7 +7,7 @@
     border: none;
 }
 
-#main {
+#main, #congrats-message {
     width: 70%;
     height: 400px;
     margin: 5vh 15%;
@@ -20,7 +20,7 @@ h1 {
     font-size: 50px;
 }
 
-#blue:hover {
+.blue:hover {
     color: #1C6DD0;
 }
 
@@ -33,7 +33,7 @@ h1 {
 
 #main-button, #game-afoot-button, #next-button-one, #next-button-two, #submit, #next-button-four-alternate,
 #next-button-four, #next-button-five, #next-button-six, #next-button-seven, #next-button-eight, #next-button-nine,
-#next-button-ten, #next-button-eleven, #next-button-twelve {
+#next-button-ten, #next-button-eleven, #next-button-twelve, #play-again {
     width: 20%;
     position: absolute;
     top: 90%;
@@ -62,19 +62,19 @@ h1 {
     top: 150%;
 }
 
-#next-button-two, #next-button-seven {
+#next-button-two, #next-button-four-alternate {
     top: 195%;
 }
 
 #next-button-five {
-    top: 230%;
+    top: 240%;
 }
 
 #next-button-six {
     top: 140%;
 }
 
-#next-button-four-alternate, #next-button-seven {
+#next-button-seven {
     top: 175%
 }
 
@@ -114,10 +114,15 @@ h1 {
     left: 75%;
 }
 
+#play-again {
+    position: absolute;
+    top: 110%;
+}
+
 #main-button:hover, #game-afoot-button:hover, #next-button-one:hover, #next-button-two:hover,
 #submit:hover, #next-button-four-alternate:hover, #next-button-four:hover, #next-button-five:hover, #next-button-six:hover,
 #next-button-seven:hover, #next-button-eight:hover, #next-button-nine:hover, #next-button-ten:hover,
-#next-button-eleven:hover, #next-button-twelve:hover {
+#next-button-eleven:hover, #next-button-twelve:hover, #play-again:hover {
     color: #1C6DD0;
     background-color: white;
     border: #1C6DD0 2px solid;
@@ -263,6 +268,19 @@ h2 {
     height: 80%;
     left: -85%;
     bottom: 150%;
+}
+
+#final-image {
+    height: 100px;
+    position: absolute;
+    top: 75%;
+    left: 42%;
+    margin-top: 5%;
+}
+
+#congrats-text {
+    position: relative;
+    bottom: 15%;
 }
 
 #part-one-par {

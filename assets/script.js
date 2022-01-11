@@ -16,6 +16,7 @@ const nextButtonEight = document.getElementById("next-button-eight");
 const nextButtonNine = document.getElementById("next-button-nine");
 const nextButtonTen = document.getElementById("next-button-ten");
 const nextButtonEleven = document.getElementById("next-button-eleven");
+const playAgain = document.getElementById("play-again");
 const instructions = document.getElementById("instructions");
 const partOne = document.getElementById("part-one");
 const partTwo = document.getElementById("part-two");
@@ -36,6 +37,7 @@ const choiceTwo = document.getElementById("choice-two");
 const choiceTwoText = document.getElementById("choice-two-text");
 const partEleven = document.getElementById("part-eleven");
 const partTwelve = document.getElementById("part-twelve");
+const congrats = document.getElementById("congrats-message");
 
 //2) Story parts variables with initial hidden status
 instructions.hidden = true;
@@ -53,6 +55,7 @@ partTen.hidden = true;
 bartenderReply.hidden = true;
 partEleven.hidden = true;
 partTwelve.hidden = true;
+congrats.hidden = true;
 
 /* Button functions, show the next portion of the story
 Inspired from Codecademy's "Piano Keys" project
@@ -131,7 +134,9 @@ nextButtonEleven.onclick = function() {
     partTwelve.scrollIntoView({behavior: "smooth"});
 }
 
-
+playAgain.onclick = function() {
+    document.location.reload(true);
+}
 
 /* First JavaScript game functions */
 let moveOn = () => {
@@ -143,16 +148,6 @@ let moveOn = () => {
             })
     }
 };
-
-// let askSherlock = () => {
-//     if (checkAnswersButton.innerHTML === "Hmm... not quite, Watson. Let me show you." ) {
-//         checkAnswersButton.addEventListener("click", function() {
-//             quizSolution.hidden = false;
-//             checkAnswersButton.hidden = true;
-//             quizSolution.scrollIntoView({behavior: "smooth"});
-//         })
-//     }
-// }
 
 let checkAnswers = () => {
     for (let i = 0; i < answers.length; i++) {
@@ -177,14 +172,6 @@ let checkAnswers = () => {
     }
 };
 checkAnswersButton.addEventListener("click", checkAnswers);
-
-// if (quizSolution.hidden = false) {
-//     alternateButtonFour.onclick = function() {
-//         partFour.hidden = false;
-//         alternateButtonFour.hidden = true;
-//         partFour.scrollIntoView({behavior: "smooth"});
-//     }
-// }
 
 // Second JavaScript interaction: questioning the pub owner
 //Losing choice
