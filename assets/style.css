@@ -221,6 +221,11 @@ h2 {
     right: 70%;
 }
 
+#diamond {
+    position: relative;
+    bottom: 120%;
+}
+
 #newspaper {
     height: 50%;
     position: relative;
