@@ -115,8 +115,10 @@ h1 {
 }
 
 #play-again {
-    position: absolute;
-    top: 110%;
+    position: relative;
+    top: 160%;
+    left: 22%;
+    margin-bottom: 20%;
 }
 
 #main-button:hover, #game-afoot-button:hover, #next-button-one:hover, #next-button-two:hover,
@@ -272,15 +274,15 @@ h2 {
 
 #final-image {
     height: 100px;
-    position: absolute;
-    top: 75%;
+    position: relative;
+    top: 120%;
     left: 42%;
-    margin-top: 5%;
 }
 
 #congrats-text {
+    margin-top: 60%;
     position: relative;
-    bottom: 15%;
+    top: 100%;
 }
 
 #part-one-par {

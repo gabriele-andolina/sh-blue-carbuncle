@@ -16,6 +16,7 @@ const nextButtonEight = document.getElementById("next-button-eight");
 const nextButtonNine = document.getElementById("next-button-nine");
 const nextButtonTen = document.getElementById("next-button-ten");
 const nextButtonEleven = document.getElementById("next-button-eleven");
+const nextButtonTwelve = document.getElementById("next-button-twelve");
 const playAgain = document.getElementById("play-again");
 const instructions = document.getElementById("instructions");
 const partOne = document.getElementById("part-one");
@@ -132,6 +133,12 @@ nextButtonEleven.onclick = function() {
     partTwelve.hidden = false;
     nextButtonEleven.hidden = true;
     partTwelve.scrollIntoView({behavior: "smooth"});
+}
+
+nextButtonTwelve.onclick = function() {
+    congrats.hidden = false;
+    nextButtonTwelve.hidden = true;
+    congrats.scrollIntoView({behavior: "smooth"});
 }
 
 playAgain.onclick = function() {
