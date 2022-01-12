@@ -778,3 +778,423 @@ select {
     text-align: center;
 }
 }
+
+/* For screens of 320px min-width */
+@media screen and (min-width: 320px) {
+    #main {
+    width: 70%;
+    height: 400px;
+    margin: 5vh 15%;
+    }
+    
+    h1 {
+        position: relative;
+        text-align: center;
+        font-family: "Tangerine", "Times New Roman", sans-serif;
+        font-size: 35px;
+    }
+    
+    #blue:hover {
+        color: #1C6DD0;
+    }
+    
+    #intro-image {
+        height: 200px;
+        position: relative;
+        top: 5%;
+        left: 34%;
+    }
+    
+    #main-button, #game-afoot-button, #next-button-one, #next-button-two, #submit, #next-button-four-alternate,
+    #next-button-four, #next-button-five, #next-button-six, #next-button-seven, #next-button-eight, #next-button-nine,
+    #next-button-ten, #next-button-eleven, #next-button-twelve {
+        width: 100%;
+        position: absolute;
+        top: 85%;
+        left: 40%;
+        text-align: center;
+        font-family: "Tangerine", "Times New Roman", sans-serif;
+        color: white;
+        background-color: #1C6DD0;
+        font-size: 50px;
+        border: #1C6DD0 2px solid;
+        border-radius: 8px;
+    }
+    
+    #game-afoot-button {
+        width: 120%;
+        top: 260%;
+        left: 25%;
+    }
+    
+    #next-button-one {
+        top: 270%;
+        left: 40%;
+    }
+    
+    #next-button-four {
+        top: 320%;
+    }
+    
+    #next-button-two, #next-button-seven {
+        top: 320%;
+        left: 40%;
+    }
+    
+    #next-button-five {
+        top: 420%;
+    }
+    
+    #next-button-six {
+        top: 240%;
+    }
+    
+    #next-button-four-alternate {
+        top: 350%;
+    }
+    
+    #next-button-seven {
+        top: 370%;
+    }
+    
+    #next-button-eight {
+        top: 460%;
+    }
+    
+    #next-button-eleven {
+        top: 410%;
+    }
+    
+    #next-button-twelve {
+        top: 440%;
+    }
+    
+    #next-button-nine {
+        top: 230%;
+    }
+    
+    #next-button-ten {
+        width: 140%;
+        position: relative;
+        top: 85%;
+        left: 20%;
+    }
+    
+    #pub-instructions {
+        position: relative;
+        top: 70%;
+        right: 35%;
+    }
+    
+    #submit {
+        width: 50vw;
+        margin-top: 10%;
+        position: relative;
+        top: 100%;
+        left: 1%;
+    }
+    
+    #main-button:hover, #game-afoot-button:hover, #next-button-one:hover, #next-button-two:hover,
+    #submit:hover, #next-button-four-alternate:hover, #next-button-four:hover, #next-button-five:hover, #next-button-six:hover,
+    #next-button-seven:hover, #next-button-eight:hover, #next-button-nine:hover, #next-button-ten:hover,
+    #next-button-eleven:hover, #next-button-twelve:hover {
+        color: #1C6DD0;
+        background-color: white;
+        border: #1C6DD0 2px solid;
+        cursor: pointer;
+    }
+    
+    .type-one-div {
+        width: 40%;
+        height: 400px;
+        margin: 20% 15%;
+        position: relative;
+        top: 10%;
+    }
+    
+    .type-two-div {
+        width: 40%;
+        height: 400px;
+        margin: 70% 15%;
+        position: relative;
+        left: 1%;
+    }
+    
+    #part-one {
+        position: relative;
+        top: 100%;
+        margin-top: 160%;
+    }
+    
+    #part-two {
+        position: relative;
+        top: 100%;
+        margin-top: 200%;
+    }
+    
+    #part-four {
+        margin-top: 300%;
+    }
+    
+    #part-seven {
+        margin-top: 160%;
+    }
+    
+    #part-eight {
+        margin-top: 320%;
+    }
+    
+    #part-nine {
+        margin-top: 430%;
+    }
+    
+    #part-six {
+        margin-top: 380%;
+    }
+    
+    #part-eleven {
+        margin-top: 200%;
+    }
+    
+    #part-twelve {
+        margin-top: 370%;
+    }
+    
+    #part-five {
+        margin-top: 260%;
+    }
+    
+    #alpha-inn-inside {
+        margin-top: 90%
+    }
+    
+    h2, p {
+        width: 170%;
+        position: relative;
+        top: 15%;
+        left: 3%;
+        margin-top: 10%;
+        font-family: Raleway;
+        font-size: 120%;
+        text-align: justify;
+        line-height: 150%;
+        font-style: italic;
+    }
+    
+    h2 {
+        text-align: center;
+        font-size: 30px;
+    }
+    
+    #instruction-paragraph {
+        font-style: normal;
+    }
+    
+    .image-one {
+        height: 150px;
+        position: relative;
+        top: 15%;
+        left: 25%;
+    }
+    
+    .image-two {
+        height: 450px;
+        position: relative;
+        bottom: 90%;
+        right: 100%;
+    }
+    
+    #hat {
+        top: 25%;
+        left: 20%;
+    }
+    
+    #light-bulb {
+        position: relative;
+        top: 25%;
+        left: 10%;
+    }
+    
+    #sherlock-sitting {
+        height: 80%;
+        position: relative;
+        top: 35%;
+        right: 70%;
+    }
+    
+    #goose {
+        height: 70%;
+        position: relative;
+        top: 30%;
+        left: 5%;
+    }
+    
+    #diamond {
+        top: 22%;
+        left: 25%;
+    }
+    
+    #newspaper {
+        height: 40%;
+        position: relative;
+        top: 20%;
+        left: 5%;
+    }
+    
+    #ad {
+        font-family: "Playfair Display";
+        font-size: 80%;
+    }
+    
+    #man {
+        height: 100%;
+        position: relative;
+        top: 25%;
+        left: 50%;
+    }
+    
+    #man-two {
+        height: 70%;
+        position: relative;
+        left: -10%;
+        top: 30%;
+    }
+    
+    #door {
+        position: relative;
+        height: 70%;
+        top: 30%;
+        left: 15%;
+    }
+    
+    #bartender {
+        width: 210%;
+        position: relative;
+        top: 80%;
+        left: -18%;
+    }
+    
+    #market-stall {
+        height: 70%;
+        position: relative;
+        top: 20%;
+        left: -20%;
+    }
+    
+    #fireplace {
+        height: 40%;
+        left: 18%;
+        top: 25%;
+    }
+    
+    #final-image {
+        height: 100px;
+        position: relative;
+        top: 310%;
+        left: 10%;
+        padding-bottom: 50px;
+    }
+    
+    #congrats-text {
+        margin-top: 60%;
+        position: relative;
+        top: 300%;
+    }
+    
+    #part-one-par {
+        position: relative;
+        top: 30%;
+    }
+    
+    #observation-deduction-game {
+        height: 100%;
+        position: relative;
+        margin-top: 250%;
+    }
+    
+    #observations {
+        width: 150%;
+        position: relative;
+        top: 20vh;
+        left: 25%;
+    }
+    
+    .observation {
+        width: 80vw;
+        height: 30vh;
+        border: black 1px solid;
+        position: relative;
+        right: 24%;
+        border-radius: 8px;
+        background-color: #FFC900;
+    }
+    
+    .observation p {
+        width: 90%;
+        position: relative;
+        left: 5%;
+        text-align: center;
+        vertical-align: middle;
+        margin: 2%;
+        font-size: 100%
+    }
+    
+    select {
+        width: 70vw;
+        position: relative;
+        top: 5vh;
+        left: 5vw;
+        font-family: "Raleway", "Times New Roman", sans-serif;
+        font-size: 15px;
+        border: black 1px solid;
+        cursor: pointer;
+    }
+    
+    #choice-one {
+        width: 130%;
+        height: 50%;
+        position: relative;
+        top: 76%;
+        left: 19%;
+        border: black 2px solid;
+        border-radius: 8px;
+        background-color: #B8DFD8;
+    }
+    
+    #choice-one:hover, #choice-one-text:hover, 
+    #choice-two:hover, #choice-two-text:hover {
+        cursor: pointer;
+    }
+    
+    #choice-two {
+        width: 130%;
+        height: 50%;
+        position: relative;
+        top: 80%;
+        left: 19%;
+        border: black 2px solid;
+        border-radius: 8px;
+        background-color: #ADC2A9;
+    }
+    
+    #bartender-reply {
+        width: 130%;
+        height: 40%;
+        position: relative;
+        top: 65%;
+        left: 19%;
+        border: black 2px solid;
+        border-radius: 8px;
+        background-color: #A3A847;
+    }
+    
+    #choice-one-text, #choice-two-text, #bartender-reply-text {
+        width: 90%;
+        position: relative;
+        top: auto;
+        font-family: "Raleway", "Times New Roman", sans-serif;
+        font-size: 90%;
+        font-weight: 900;
+        text-align: center;
+    }
+}
