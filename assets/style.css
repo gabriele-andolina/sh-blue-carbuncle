@@ -33,7 +33,7 @@ h1 {
 
 #main-button, #game-afoot-button, #next-button-one, #next-button-two, #submit, #next-button-four-alternate,
 #next-button-four, #next-button-five, #next-button-six, #next-button-seven, #next-button-eight, #next-button-nine,
-#next-button-ten, #next-button-eleven, #next-button-twelve, #play-again {
+#next-button-ten, #next-button-eleven, #next-button-twelve {
     width: 20%;
     position: absolute;
     top: 90%;
@@ -114,17 +114,10 @@ h1 {
     left: 75%;
 }
 
-#play-again {
-    position: relative;
-    top: 160%;
-    left: 22%;
-    margin-bottom: 20%;
-}
-
 #main-button:hover, #game-afoot-button:hover, #next-button-one:hover, #next-button-two:hover,
 #submit:hover, #next-button-four-alternate:hover, #next-button-four:hover, #next-button-five:hover, #next-button-six:hover,
 #next-button-seven:hover, #next-button-eight:hover, #next-button-nine:hover, #next-button-ten:hover,
-#next-button-eleven:hover, #next-button-twelve:hover, #play-again:hover {
+#next-button-eleven:hover, #next-button-twelve:hover {
     color: #1C6DD0;
     background-color: white;
     border: #1C6DD0 2px solid;
@@ -491,11 +484,6 @@ h1 {
     position: relative;
     top: 85%;
     left: 20%;
-}
-
-#play-again {
-    width: 80%;
-    left: 15%;
 }
 
 #pub-instructions {
