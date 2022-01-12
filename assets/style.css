@@ -7,6 +7,7 @@
     border: none;
 }
 
+@media screen and (max-width: 1200px){
 #main, #congrats-message {
     width: 70%;
     height: 400px;
@@ -373,11 +374,11 @@ select {
     font-size: 90%;
     font-weight: 900;
     text-align: center;
+    }
 }
 
-/* Media queries */
 /* For screens size of 568px and down */
-@media screen and (max-width: 568px) {
+/* @media screen and (max-width: 568px) {
 #main {
 width: 70%;
 height: 400px;
@@ -777,10 +778,10 @@ select {
     font-weight: 900;
     text-align: center;
 }
-}
+} */
 
 /* For screens of 320px min-width */
-@media screen and (min-width: 320px) {
+@media screen and (min-width: 320px) and (max-width: 568px) {
     #main {
     width: 70%;
     height: 400px;
@@ -808,10 +809,10 @@ select {
     #main-button, #game-afoot-button, #next-button-one, #next-button-two, #submit, #next-button-four-alternate,
     #next-button-four, #next-button-five, #next-button-six, #next-button-seven, #next-button-eight, #next-button-nine,
     #next-button-ten, #next-button-eleven, #next-button-twelve {
-        width: 100%;
+        width: 90%;
         position: absolute;
         top: 85%;
-        left: 40%;
+        left: 5%;
         text-align: center;
         font-family: "Tangerine", "Times New Roman", sans-serif;
         color: white;
@@ -834,6 +835,7 @@ select {
     
     #next-button-four {
         top: 320%;
+        left: 50%;
     }
     
     #next-button-two, #next-button-seven {
@@ -843,14 +845,17 @@ select {
     
     #next-button-five {
         top: 420%;
+        left: 50%;
     }
     
     #next-button-six {
         top: 240%;
+        left: 50%;
     }
     
     #next-button-four-alternate {
         top: 350%;
+        left: 50%;
     }
     
     #next-button-seven {
@@ -859,18 +864,22 @@ select {
     
     #next-button-eight {
         top: 460%;
+        left: 40%;
     }
     
     #next-button-eleven {
         top: 410%;
+        left: 50%;
     }
     
     #next-button-twelve {
         top: 440%;
+        left: 50%;
     }
     
     #next-button-nine {
         top: 230%;
+        left: 50%;
     }
     
     #next-button-ten {
