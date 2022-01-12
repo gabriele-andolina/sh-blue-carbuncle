@@ -62,62 +62,35 @@ First possible outcome of the interaction: the user has chosen the right approac
 ![Second JS interaction - losing choice](assets/docs/losing-choice.png)
 Second possible outcome of the interaction: the user has chosen the wrong approach (the box on the left), which results in Sherlock Holmes not being able to solve the case. The main button becomes the way to refresh the page and play again.
 
-* Copyright & Social media
-
-![The website's copyright line and social media links](assets/documentation/social-media.png)
-Placed at the bottom of every page, it allows the users to reach The Herbalist's Counter beyond its website, on Facebook, Instagram, and Twitter. There, new content awaits the user.
+* Congratulations message
+![Congratulations message](assets/docs/congrats.png)
+A congratulation message being displayed when the user successfully reaches the end of the story.
 
 ## **4. Testing**
 ### 4.1 *Validator Testing*
 * HTML
-   * The final version of the code is free of errors when passed through the official [W3C Validator](https://validator.w3.org/nu/?doc=https%3A%2F%2Fgabriele-andolina.github.io%2Fherbalist-counter%2F).
-   Earlier versions of the code, on the contrary, had some mistakes to be corrected. In particular, there was a syntax error due to a `p` element placed within a `h3` one and two `div` elements that lacked a closing tag. Thanks to the validator's report I was able to discover and correct them.
-
-   ![W3C HTML Validation](assets/documentation/html-validation.png)
+   * The final version of the code is free of errors when passed through the official [W3C Validator](https://validator.w3.org/nu/#textarea).
+   There are, however, some warnings left due to a lack of headings for the website's sections. This is due to the use of sections as containers for each portion of the story, which however have been left with no title to give continuity to the reading experience. This can be improved in future versions of the project.
+   ![W3C HTML Validation](assets/docs/html-validation.png)
 
 * CSS 
    * No errors were found when passing through the official [Jigsaw Validator](https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Fgabriele-andolina.github.io%2Fherbalist-counter%2F&profile=css3svg&usermedium=all&warning=1&vextwarning=&lang=en).
 
-   ![W3C CSS Validation](assets/documentation/css-validation.png)
+   ![W3C CSS Validation](assets/docs/css-validation.png)
+
+* JavaScript
+  * 
 
 ### 4.2 *Responsiveness*
 After finishing the very first version of the website, I started working on the media queries to ensure responsiveness on mobile and tablet. To do so, I constantly tested the website with the Chrome Developer Tools, employing a combination of the "responsive" function (that is, manually checking the breakpoints) and of the available set screen sizes (i.e. iPad, iPhone, etc.). This led me to write media queries for a number of different screen sizes, specifying styles for max-widths of 1200px, 900px, 680px, 568px, 420px, 380px and 320px. At the end, I was able to make the site responsive for the most common screen sizes. This part of the development process can perhaps be sped up by using libraries like Bootstrap. These tools being currently out of my skill set, however, I had to manually specify the styles for the different screen sizes.
 Other than using the Chrome Developer Tools, I also made use of a Redmi 5 to test the website and its pages.
 
-### 4.3 *Accessibility*
-Through the Chrome Developer Tools I have run two separate Lighthouse audits, one for mobile and one for desktop; both show a score of 98/100 for accessibility (please see the attached report in the 'documentation' directory or the image in the 'Other Lighthouse results' below). 
-
-### 4.4 *Internal and external links*
+### 4.3 *Internal links*
 Every link on the website is fully functioning. This applies both to internal ones (such as those of the shop logo and the navigation bar) and external ones (such as the three social media icon-links in the footer). Internal links redirect the user to the other pages *within* the website, whereas the social media links open in a new tab to ensure an optimal UX.
-
-### 4.5 *Error page*
-Upon checking previous versions of the website, it may be noticed that an error page was shown after filling out the contact form. This was due to a syntax error, where the 'method' attribute was erroneously set to the 'POST' value, as opposed to the correct 'GET' one (after filling out the form, in fact, the user was initially supposed to be redirected to the site's homepage). After correcting this, I also created a custom 'Thank you' page to improve UX and the feedback provided to users, who are now certain that their message has been successfully sent and not simply led back to the homepage.
-
-### 4.6 *Other Lighthouse results*
-* Mobile
-
-![Lighthouse report for mobile](assets/documentation/mobile-performance.png)
-
-* Desktop
-
-![Lighthouse report for desktop](assets/documentation/desktop-performance.png)
-
-The 'Best Practices' indicator consistently scored 100/100 on various audits and on both mobile and desktop.
-The 'SEO' value shows a 5-point gap between mobile and desktop, scoring 95/100 for mobile and 100/100 for desktop.
-Among the four different indicators, the 'Performance' value is the one worth noting for two reasons. As it can be observed in the image/reports, on this particular aspect there is a significant difference between mobile and desktop. In fact, the website's performance on a mobile device is significantly lower, having scored 75/100, whereas the same value increases to 95/100 on desktop.
-
-Despite the lower performance showed in the mobile audit, the current value already represents a significant improvement from earlier versions of the website. In fact, the first audits showed a value slightly over 30/100, which has been improved considerably by further compressing all the images used on the website. Further improvement is possible and will be achieved in future versions of the website, thanks to an increased understanding of performance-related aspects on the developer's part.
-
-### 4.7 *Testing User Stories*
-* First-time user/visitor:
-   * I want to find a herbalist shop in Turin, so I do a quick Google search and catch sight of this Herbalist's Counter website. I open the website and see the shop's welcome message. Right there on the homepage, I also get a clear idea of where the shop is located, what products they have on offer and what the owners' mission is.
-   * I see a 'Contact us' section, where I guess I will be able to find the info I need, in particular the shop's opening hours and address. Before going there, however, I want to make sure this is a shop I actually *want* to visit, which leads me to browsing through the website. I start from the products page, mostly because as a first time user my goal is to see if this particular shop has what I need. It does, so I take a look at their 'Our shop' page, where I learn about the two owners' story and love for nature and herbal medicine. I also see an 'Events' page, which I find peculiar for a herbalist's shop. There, I learn that two events are organized on a monthly basis, something not offered by just any herbalist's shop. Now I have gathered enough information about the shop to decide that it's a place worth going to, at the very least because, judging by the style they adopt in their writing, the two owners sound like a fun couple.
-* Returning user/visitor:
-   * I have already visited The Herbalist's Counter a few times, and I ended up buying not only that herbal tea I needed for my cold, but also a couple bars of Aleppo soap and two varieties of tea. The Counter is a nice place to visit, and now that I need to purchase another pound of herbal tea I open the website to check if the opening hours are still the same. The opening hours are unchanged, but since in the past I took part in the Herbal Friday event and had a good time there, I decide to navigate to the 'Events' section to check if that activity is still on offer. It is, and I also find an interesting surprise: a new event, a tea ceremony that will soon start to be organized every month. I am fascinated by it, so I take a mental note to ask the owners about this when I visit the shop.
 
 ## 5. **Deployment**
 The site has been deployed to GitHub Pages. The steps to deploy are as follows:
-   * In the 'herbalist-counter' GitHub repository, navigate to the 'Settings' page.
+   * In the 'sh-blue-carbuncle' GitHub repository, navigate to the 'Settings' page.
    * Within the 'Settings' page, open the GitHub Pages dedicated section.
    * In the 'Source' section, you can find a 'Branch' drop-down menu. Select 'main' and save the changes.
    * When the site has been successfully deployed, a message of 'Your site is published at https://...' will be displayed. (Before that, a message of 'Your site is ready to be published at https://...' will pop up during the upload.)
@@ -127,13 +100,12 @@ The site has been deployed to GitHub Pages. The steps to deploy are as follows:
 * Languages
    * **HTML5**
    * **CSS3**
+   * **JavaScript**
 * Websites and Softwares
    * **Balsamiq**: used to create the website's wireframes (located in the 'documentation' folder)
-   * **Font Awesome**: FA's icons were used to create the social media links found in the website's footer.
    * **Git**: Git was used for version control through the Gitpod terminal, to add, commit and push the project's updates to GitHub.
    * **GitHub**: GitHub, together with GitHub Pages, has been used to store the project's repository and deploy the website.
    * **Google Fonts**: Google Fonts has been used to import the two fonts in use on the website, namely the "Great Vibes" and "Montserrat" ones.
-   * **Compresss.com**: This website has been instrumental in reducing the size of the images employed in the project, with the positive result of an increased performance in the final version.
    * **ColorSpace**: The color palette used in the project has been created on this website.
 
 ## 7. **Credits**

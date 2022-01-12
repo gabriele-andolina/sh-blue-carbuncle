@@ -1,4 +1,4 @@
-// 1) Buttons variables 
+// 1) Buttons and story parts variables 
 const mainButton = document.getElementById("main-button");
 const gameAfootButton = document.getElementById("game-afoot-button");
 const nextButtonOne = document.getElementById("next-button-one");
@@ -40,7 +40,7 @@ const partEleven = document.getElementById("part-eleven");
 const partTwelve = document.getElementById("part-twelve");
 const congrats = document.getElementById("congrats-message");
 
-//2) Story parts variables with initial hidden status
+// 2) Initial hidden status for each story section set to true; each part is shown when the user clicks the button
 instructions.hidden = true;
 partOne.hidden = true;
 partTwo.hidden = true;
@@ -58,7 +58,7 @@ partEleven.hidden = true;
 partTwelve.hidden = true;
 congrats.hidden = true;
 
-/* Button functions, show the next portion of the story
+/* 3) Buttons onclick attribute to show the next portion of the story
 Inspired from Codecademy's "Piano Keys" project
 */
 mainButton.onclick = function() {
@@ -89,73 +89,74 @@ alternateButtonFour.onclick = function() {
     partFour.hidden = false;
     alternateButtonFour.hidden = true;
     partFour.scrollIntoView({behavior: "smooth"});
-}
+};
 
 nextButtonFour.onclick = function() {
     quizSolution.hidden = true;
     partFive.hidden = false;
     nextButtonFour.hidden = true;
     partFive.scrollIntoView({behavior: "smooth"});
-}
+};
 
 nextButtonFive.onclick = function() {
     partSix.hidden = false;
     nextButtonFive.hidden = true;
     partSix.scrollIntoView({behavior: "smooth"});
-}
+};
 
 nextButtonSix.onclick = function() {
     partSeven.hidden = false;
     nextButtonSix.hidden = true;
     partSeven.scrollIntoView({behavior: "smooth"});
-}
+};
 
 nextButtonSeven.onclick = function() {
     partEight.hidden = false;
     nextButtonSeven.hidden = true;
     partEight.scrollIntoView({behavior: "smooth"});
-}
+};
 
 nextButtonEight.onclick = function() {
     partNine.hidden = false;
     nextButtonEight.hidden = true;
     partNine.scrollIntoView({behavior: "smooth"});
-}
+};
 
 nextButtonNine.onclick = function() {
     partTen.hidden = false;
     nextButtonNine.hidden = true;
     partTen.scrollIntoView({behavior: "smooth"});
     nextButtonTen.hidden = true;
-}
+};
 
 nextButtonEleven.onclick = function() {
     partTwelve.hidden = false;
     nextButtonEleven.hidden = true;
     partTwelve.scrollIntoView({behavior: "smooth"});
-}
+};
 
 nextButtonTwelve.onclick = function() {
     congrats.hidden = false;
     nextButtonTwelve.hidden = true;
     congrats.scrollIntoView({behavior: "smooth"});
-}
+};
 
 playAgain.onclick = function() {
     document.location.reload(true);
-}
+};
 
-/* First JavaScript game functions */
+// 4) First JS game functions
+// The moveOn() function is called when the user answers each question correctly
 let moveOn = () => {
     if (checkAnswersButton.innerHTML === "Well done, Dr Watson! Let us move on.") {
         checkAnswersButton.addEventListener("click", function() {
             partFour.hidden = false;
             checkAnswersButton.hidden = true;
             partFour.scrollIntoView({behavior: "smooth"});
-            })
+            });
     }
 };
-
+// checkAnswers() function matches the user's input with the correct answers and provides feedback
 let checkAnswers = () => {
     for (let i = 0; i < answers.length; i++) {
         selectedDed.push(answers[i].options[answers[i].selectedIndex].value);
@@ -180,34 +181,37 @@ let checkAnswers = () => {
 };
 checkAnswersButton.addEventListener("click", checkAnswers);
 
-// Second JavaScript interaction: questioning the pub owner
-//Losing choice
-//1.1
+/* 5) Second JS interaction: questioning the pub owner
+The two boxes allow the user to choose their approach; the left one loses, the right one wins
+Each box is given an EventListener that will lead the user along the two different paths
+*/
+
+//Losing choice (left box)
 choiceOne.addEventListener("click", function() {
     bartenderReply.hidden = false;
-    bartenderReplyText.innerHTML = "Evenin', sir. Need any help?"
-    choiceOneText.innerHTML = "Just some quick information. Where did you buy those geese you sold for Christmas?"
-    choiceTwoText.innerHTML = "Yes, I'm here on an investigation. Tell me where you bought those geese you sold for Christmas."
-    //1.1.1
+    bartenderReplyText.innerHTML = "Evenin', sir. Need any help?";
+    choiceOneText.innerHTML = "Just some quick information. Where did you buy those geese you sold for Christmas?";
+    choiceTwoText.innerHTML = "Yes, I'm here on an investigation. Tell me where you bought those geese you sold for Christmas.";
+    
     choiceOne.addEventListener("click", function() {
-        bartenderReplyText.innerHTML = "Geese... what geese? How about a pint instead?"
-        choiceOneText.innerHTML = "I'm serious. Where did you buy those geese?"
-        choiceTwoText.innerHTML = "I'm not joking! I need to know that information now!"
-        //1.1.1.1.
+        bartenderReplyText.innerHTML = "Geese... what geese? How about a pint instead?";
+        choiceOneText.innerHTML = "I'm serious. Where did you buy those geese?";
+        choiceTwoText.innerHTML = "I'm not joking! I need to know that information now!";
+        
         choiceOne.addEventListener("click", function() {
-            bartenderReplyText.innerHTML = "I'm serious too. Buy a drink or get out!"
+            bartenderReplyText.innerHTML = "I'm serious too. Buy a drink or get out!";
             choiceOne.hidden = true;
             choiceTwoText.innerHTML = "Dear Watson, I have been too hasty and failed to get that information. We won't be able to solve this case...";
 
             nextButtonTen.hidden = false;
             nextButtonTen.innerHTML = "Play again. Click here to refresh the page.";
             nextButtonTen.addEventListener("click", function() {
-            document.location.reload(true)
-    })
+            document.location.reload(true);
+    });
         });
-        //1.1.1.2
+        
         choiceTwo.addEventListener("click", function() {
-            bartenderReplyText.innerHTML = "I'm not joking either. Buy a drink or get out!"
+            bartenderReplyText.innerHTML = "I'm not joking either. Buy a drink or get out!";
             choiceOne.hidden = true;
             choiceTwo.style.width = "90%";
             choiceTwoText.innerHTML = "Dear Watson, I have been too hasty and failed to get that information. We won't be able to solve this case...";
@@ -215,30 +219,30 @@ choiceOne.addEventListener("click", function() {
             nextButtonTen.hidden = false;
             nextButtonTen.innerHTML = "Play again. Click here to refresh the page.";
             nextButtonTen.addEventListener("click", function() {
-            document.location.reload(true)
-    })
-        })
-    })
-    //1.2.1
+            document.location.reload(true);
+    });
+        });
+    });
+    
     choiceTwo.addEventListener("click", function() {
-        bartenderReplyText.innerHTML = "Can't I buy me pub's food where I like?"
-        choiceOneText.innerHTML = "This is important. Where did you buy those geese?"
-        choiceTwoText.innerHTML = "Should I call the police?? I need to know that information now!"
-        //1.2.1.1.
+        bartenderReplyText.innerHTML = "Can't I buy me pub's food where I like?";
+        choiceOneText.innerHTML = "This is important. Where did you buy those geese?";
+        choiceTwoText.innerHTML = "Should I call the police?? I need to know that information now!";
+        
         choiceOne.addEventListener("click", function() {
-            bartenderReplyText.innerHTML = "I can buy my food where I like and won't tell you! Now out of my pub!"
+            bartenderReplyText.innerHTML = "I can buy my food where I like and won't tell you! Now out of my pub!";
             choiceOne.hidden = true;
             choiceTwoText.innerHTML = "Dear Watson, I have been too hasty and failed to get that information. We won't be able to solve this case...";
 
             nextButtonTen.hidden = false;
             nextButtonTen.innerHTML = "Play again. Click here to refresh the page.";
             nextButtonTen.addEventListener("click", function() {
-            document.location.reload(true)
-    })
+            document.location.reload(true);
+    });
         });
-        //1.2.1.2
+        
         choiceTwo.addEventListener("click", function() {
-            bartenderReplyText.innerHTML = "You can call the Pope if you like. Now buy a drink or get out!"
+            bartenderReplyText.innerHTML = "You can call the Pope if you like. Now buy a drink or get out!";
             choiceOne.hidden = true;
             choiceTwo.style.width = "90%";
             choiceTwoText.innerHTML = "Dear Watson, I have been too hasty and failed to get that information. We won't be able to solve this case...";
@@ -246,29 +250,27 @@ choiceOne.addEventListener("click", function() {
             nextButtonTen.hidden = false;
             nextButtonTen.innerHTML = "Play again. Click here to refresh the page.";
             nextButtonTen.addEventListener("click", function() {
-            document.location.reload(true)
-    })
-        })
-    })
+            document.location.reload(true);
+    });
+        });
+    });
 
-})
+});
 
-// Winning choice
-//2.1
+//Winning choice (right box)
 choiceTwo.addEventListener("click", function() {
     bartenderReply.hidden = false;
-    bartenderReplyText.innerHTML = "You bet! Bloody cold outside, innit?"
-    choiceOneText.innerHTML = "Cold indeed! If only one had something to eat to warm up... perhaps some fine goose meat. Right, Watson?"
-    choiceTwoText.innerHTML = "Cold indeed! Thankfully, my friend and I warmed our bellies with one of your geese. It was given to us by a friend..."
+    bartenderReplyText.innerHTML = "You bet! Bloody cold outside, innit?";
+    choiceOneText.innerHTML = "Cold indeed! If only one had something to eat to warm up... perhaps some fine goose meat. Right, Watson?";
+    choiceTwoText.innerHTML = "Cold indeed! Thankfully, my friend and I warmed our bellies with one of your geese. It was given to us by a friend...";
 
-    //2.1.1
     choiceOne.addEventListener("click", function() {
-        bartenderReplyText.innerHTML = "Goose! I have some excellent one I bought at the Covent Garden Market."
-        choiceOneText.innerHTML = "Then we shan't fail to try it! Which stall did you buy it from, if I may ask?"
-        choiceTwoText.innerHTML = "Being a fowl fancier myself, I buy my meat there too. Which seller does your goose come from?"
-        //2.1.1.1.
+        bartenderReplyText.innerHTML = "Goose! I have some excellent one I bought at the Covent Garden Market.";
+        choiceOneText.innerHTML = "Then we shan't fail to try it! Which stall did you buy it from, if I may ask?";
+        choiceTwoText.innerHTML = "Being a fowl fancier myself, I buy my meat there too. Which seller does your goose come from?";
+        
         choiceOne.addEventListener("click", function() {
-            bartenderReplyText.innerHTML = "From Breckinridge's, sir. You should try it."
+            bartenderReplyText.innerHTML = "From Breckinridge's, sir. You should try it.";
             choiceOne.hidden = true;
             choiceTwoText.innerHTML = "Dear Watson, we've got what we came here for. Let us eat quickly and go to the stalls.";
 
@@ -277,12 +279,12 @@ choiceTwo.addEventListener("click", function() {
             nextButtonTen.addEventListener("click", function() {
             partEleven.hidden = false;
             nextButtonTen.hidden = true;
-            partEleven.scrollIntoView({behavior: "smooth"})
-    })
+            partEleven.scrollIntoView({behavior: "smooth"});
+    });
         });
-        //2.1.1.2
+        
         choiceTwo.addEventListener("click", function() {
-            bartenderReplyText.innerHTML = "Breckinridge is his name. Excellent meat!"
+            bartenderReplyText.innerHTML = "Breckinridge is his name. Excellent meat!";
             choiceOne.hidden = true;
             choiceTwo.style.width = "90%";
             choiceTwoText.innerHTML = "Dear Watson, now we know where to go. Let us eat quickly and go to the stalls.";
@@ -292,18 +294,18 @@ choiceTwo.addEventListener("click", function() {
             nextButtonTen.addEventListener("click", function() {
             partEleven.hidden = false;
             nextButtonTen.hidden = true;
-            partEleven.scrollIntoView({behavior: "smooth"})
-    })
-        })
-    })
-    //2.2.1
+            partEleven.scrollIntoView({behavior: "smooth"});
+    });
+        });
+    });
+    
     choiceTwo.addEventListener("click", function() {
-        bartenderReplyText.innerHTML = "Oh, yes. We had a Christmas club with a dozen geese for a prize."
-        choiceOneText.innerHTML = "The one our friend gave us was excellent. Where did you buy it?"
-        choiceTwoText.innerHTML = "A superb prize it was! Do you happen to remember the seller?"
-        //2.2.1.1.
+        bartenderReplyText.innerHTML = "Oh, yes. We had a Christmas club with a dozen geese for a prize.";
+        choiceOneText.innerHTML = "The one our friend gave us was excellent. Where did you buy it?";
+        choiceTwoText.innerHTML = "A superb prize it was! Do you happen to remember the seller?";
+        
         choiceOne.addEventListener("click", function() {
-            bartenderReplyText.innerHTML = "Certainly, sir. Breckinridge is his name. Excellent meat!"
+            bartenderReplyText.innerHTML = "Certainly, sir. Breckinridge is his name. Excellent meat!";
             choiceOne.hidden = true;
             choiceTwoText.innerHTML = "Dear Watson, now we know whom to look for. Let us move!";
 
@@ -312,12 +314,12 @@ choiceTwo.addEventListener("click", function() {
             nextButtonTen.addEventListener("click", function() {
             partEleven.hidden = false;
             nextButtonTen.hidden = true;
-            partEleven.scrollIntoView({behavior: "smooth"})
-    })
+            partEleven.scrollIntoView({behavior: "smooth"});
+    });
         });
-        //2.2.1.2
+        
         choiceTwo.addEventListener("click", function() {
-            bartenderReplyText.innerHTML = "At Breckinridge's sir, and it was an excellent purchase!"
+            bartenderReplyText.innerHTML = "At Breckinridge's sir, and it was an excellent purchase!";
             choiceOne.hidden = true;
             choiceTwo.style.width = "90%";
             choiceTwoText.innerHTML = "Dear Watson, we're closer to the solution now. Let us go to Breckinridge's.";
@@ -327,8 +329,8 @@ choiceTwo.addEventListener("click", function() {
             nextButtonTen.addEventListener("click", function() {
             partEleven.hidden = false;
             nextButtonTen.hidden = true;
-            partEleven.scrollIntoView({behavior: "smooth"})
-    })
-        })
-    })
+            partEleven.scrollIntoView({behavior: "smooth"});
+    });
+        });
+    });
 });    
