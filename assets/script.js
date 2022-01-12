@@ -17,7 +17,6 @@ const nextButtonNine = document.getElementById("next-button-nine");
 const nextButtonTen = document.getElementById("next-button-ten");
 const nextButtonEleven = document.getElementById("next-button-eleven");
 const nextButtonTwelve = document.getElementById("next-button-twelve");
-const playAgain = document.getElementById("play-again");
 const instructions = document.getElementById("instructions");
 const partOne = document.getElementById("part-one");
 const partTwo = document.getElementById("part-two");
@@ -141,9 +140,6 @@ nextButtonTwelve.onclick = function() {
     congrats.scrollIntoView({behavior: "smooth"});
 };
 
-playAgain.onclick = function() {
-    document.location.reload(true);
-};
 
 // 4) First JS game functions
 // The moveOn() function is called when the user answers each question correctly
